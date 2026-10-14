@@ -1,0 +1,36 @@
+/* Hindi localization for VaidyaLoop. Base layout is shared with the English page. */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap');
+:root{--font:'Hind','Noto Sans Devanagari',Arial,sans-serif;--display:'Hind','Noto Sans Devanagari',Arial,sans-serif}
+html[lang="hi"] body,html[lang="hi"] button,html[lang="hi"] input,html[lang="hi"] select,html[lang="hi"] textarea{font-family:'Hind','Noto Sans Devanagari',Arial,sans-serif;letter-spacing:0}
+html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] h3,html[lang="hi"] h4{font-family:'Hind','Noto Sans Devanagari',Arial,sans-serif;letter-spacing:0!important;line-height:1.28}
+html[lang="hi"] body{font-size:17px;line-height:1.75}
+html[lang="hi"] .eyebrow{letter-spacing:.02em;font-size:12px;line-height:1.45}
+html[lang="hi"] .primary-nav{gap:clamp(8px,1.4vw,20px)}
+html[lang="hi"] .primary-nav>a:not(.nav-cta){font-size:14px;white-space:nowrap}
+html[lang="hi"] .nav-cta{font-size:13px;white-space:nowrap}
+html[lang="hi"] .hero h1{font-size:clamp(34px,4.7vw,58px);line-height:1.25;letter-spacing:0!important}
+html[lang="hi"] .hero-lead{font-size:18px;line-height:1.8}
+html[lang="hi"] .hero-tags span{font-size:12px;line-height:1.5}
+html[lang="hi"] .section-heading h2,html[lang="hi"] .section-copy h2,html[lang="hi"] .ai-copy h2,html[lang="hi"] .accounting-layout h2,html[lang="hi"] .tailor-layout h2{font-size:clamp(28px,3.4vw,42px);line-height:1.32;letter-spacing:0!important}
+html[lang="hi"] .section-heading p,html[lang="hi"] .section-intro{font-size:16px;line-height:1.85}
+html[lang="hi"] .value-card h3,html[lang="hi"] .benefit-item h3,html[lang="hi"] .operation-card h3,html[lang="hi"] .roadmap-card h3,html[lang="hi"] .why-card h3{letter-spacing:0!important;line-height:1.35}
+html[lang="hi"] .value-card p,html[lang="hi"] .benefit-item p,html[lang="hi"] .operation-card p,html[lang="hi"] .roadmap-card p,html[lang="hi"] .why-card li,html[lang="hi"] .faq-item p{font-size:15px;line-height:1.8}
+html[lang="hi"] .btn,html[lang="hi"] .nav-cta,html[lang="hi"] .platform-tab{letter-spacing:0;font-family:'Hind','Noto Sans Devanagari',Arial,sans-serif}
+html[lang="hi"] .language-switch{display:inline-flex;align-items:center;justify-content:center;padding:7px 10px;border:1px solid var(--line);border-radius:9px;font-size:13px;font-weight:700;color:var(--teal-dark);background:#fff}
+.language-switch{display:inline-flex;align-items:center;justify-content:center;padding:7px 10px;border:1px solid #dfe9e6;border-radius:9px;font-size:12px;font-weight:800;color:#0f625a;background:#fff}
+@media(max-width:860px){html[lang="hi"] .primary-nav{gap:8px}html[lang="hi"] .primary-nav>a:not(.nav-cta){font-size:15px}html[lang="hi"] .hero h1{font-size:clamp(34px,8vw,52px)}html[lang="hi"] .section-pad{padding:64px 0}}
+@media(max-width:600px){html[lang="hi"] body{font-size:17px}html[lang="hi"] .hero h1{font-size:36px;line-height:1.28}html[lang="hi"] .hero-lead{font-size:17px}html[lang="hi"] .section-heading h2,html[lang="hi"] .section-copy h2,html[lang="hi"] .ai-copy h2,html[lang="hi"] .accounting-layout h2,html[lang="hi"] .tailor-layout h2{font-size:29px;line-height:1.34}html[lang="hi"] .value-card p,html[lang="hi"] .benefit-item p,html[lang="hi"] .operation-card p,html[lang="hi"] .roadmap-card p,html[lang="hi"] .why-card li{font-size:15.5px;line-height:1.82}html[lang="hi"] .platform-tabs{gap:5px;padding:12px}html[lang="hi"] .platform-tab{font-size:14px;padding:10px 12px}html[lang="hi"] .form-heading h3{line-height:1.35}}
+
+/* Make embedded product mockup text legible in Devanagari as well. */
+html[lang="hi"] .dash-kicker,html[lang="hi"] .mini-label{font-size:10px;letter-spacing:0;line-height:1.45}
+html[lang="hi"] .stat-box>span{font-size:10px;line-height:1.45}
+html[lang="hi"] .stat-box small{font-size:9px;line-height:1.4}
+html[lang="hi"] .queue-person strong{font-size:11px;line-height:1.4}
+html[lang="hi"] .queue-person small{font-size:10px;line-height:1.4}
+html[lang="hi"] .mini-window-bar strong{font-size:9px;letter-spacing:0}
+html[lang="hi"] .mini-window-bar small,html[lang="hi"] .mini-toolbar span,html[lang="hi"] .mini-table-head span,html[lang="hi"] .mini-table-row small{font-size:8px;line-height:1.45}
+html[lang="hi"] .mini-window-foot{font-size:8px;line-height:1.5}
+html[lang="hi"] .roster-table th{font-size:9px;line-height:1.35}
+html[lang="hi"] .roster-table td b{font-size:9px;line-height:1.4}
+html[lang="hi"] .roster-table td small{font-size:8px;line-height:1.4}
+@media(min-width:861px) and (max-width:1150px){html[lang="hi"] .primary-nav{gap:8px}html[lang="hi"] .primary-nav>a:not(.nav-cta){font-size:12px}html[lang="hi"] .nav-cta{padding:9px 10px;font-size:12px}}

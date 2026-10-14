@@ -1,403 +1,386 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7faf9">
-  <meta name="description" content="VaidyaLoop brings appointments, walk-in queues, patient history, AI-assisted visit summaries, billing, pharmacy, staff and operational reports into one clinic workspace.">
-  <title>VaidyaLoop — A clearer view of every patient</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#f7faf9" name="theme-color"/>
+<meta content="VaidyaLoop brings appointments, walk-in queues, patient history, AI-assisted visit summaries, billing, pharmacy, staff and operational reports into one clinic workspace." name="description"/>
+<title>VaidyaLoop — A clearer view of every patient</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script>
+<link href="index-hi.html" hreflang="hi" rel="alternate"/></head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="VaidyaLoop home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 40 40" fill="none"><path d="M12 8.5h9.2a9 9 0 0 1 0 18H17a6 6 0 0 1 0-12h7" stroke="currentColor" stroke-width="3.1" stroke-linecap="round"/><path d="M28 31.5h-9.2a9 9 0 0 1 0-18H23a6 6 0 0 1 0 12h-7" stroke="currentColor" stroke-width="3.1" stroke-linecap="round"/></svg>
-        </span>
-        <span class="brand-name">Vaidya<span>Loop</span></span>
-      </a>
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
-        <a href="#platform">Platform</a>
-        <a href="#ai-history">AI patient history</a>
-        <a href="#operations">Operations</a>
-        <a href="#roster-planner">AI roster</a>
-        <a href="#roadmap">Roadmap</a>
-        <a class="nav-cta" href="#contact">Book a walkthrough <span aria-hidden="true">↗</span></a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <section class="hero section-pad">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow"><span class="eyebrow-dot"></span> Clinic and hospital management, connected</div>
-          <h1>Spend less time searching.<br><span>More time with patients.</span></h1>
-          <p class="hero-lead">VaidyaLoop is being designed to bring appointments, patient history, billing, pharmacy and staff operations into one clear workspace—for independent clinics and growing healthcare teams.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Discuss your clinic's needs <span aria-hidden="true">→</span></a>
-            <a class="btn btn-secondary" href="#platform">Explore the platform</a>
-          </div>
-          <div class="hero-note"><span class="note-icon" aria-hidden="true">✓</span><span>Planned around real clinic workflows, with an incremental path from OPD to broader hospital operations.</span></div>
-          <div class="hero-tags" aria-label="Product focus">
-            <span>Online clinic presence</span><span>Digital patient records</span><span>AI patient brief</span><span>AI duty roster</span><span>Billing, pharmacy & accounts</span>
-          </div>
-        </div>
-        <div class="hero-visual" aria-label="Illustrative VaidyaLoop clinic dashboard preview">
-          <div class="visual-glow"></div>
-          <div class="dashboard-card">
-            <div class="dash-top">
-              <div><span class="dash-kicker">CLINIC OVERVIEW</span><h2>Today's clinic</h2></div>
-              <div class="date-pill"><span class="status-dot"></span> Live design preview</div>
-            </div>
-            <div class="stat-grid">
-              <div class="stat-box"><span>Appointments</span><strong>24</strong><small class="positive">8 follow-ups</small></div>
-              <div class="stat-box"><span>Checked in</span><strong>11</strong><small>Next token · 12</small></div>
-              <div class="stat-box"><span>Collection</span><strong>₹18.4k</strong><small>Recorded today</small></div>
-            </div>
-            <div class="dash-section-head"><h3>Next in queue</h3><span class="muted-small">Illustrative data</span></div>
-            <div class="queue-list">
-              <div class="queue-row"><span class="queue-token">08</span><div class="queue-person"><strong>Meera K.</strong><small>Follow-up · 10:30 AM</small></div><span class="queue-status status-ready">Ready</span></div>
-              <div class="queue-row"><span class="queue-token priority-token">09</span><div class="queue-person"><strong>Arjun S.</strong><small>Priority · 10:35 AM</small></div><span class="queue-status status-wait">Waiting</span></div>
-            </div>
-            <div class="ai-preview">
-              <div class="ai-preview-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.6"/></svg></div>
-              <div><div class="ai-title">AI patient brief <span>Concept preview</span></div><p>Recent visit notes, recorded medicines and pending follow-up—summarised for the doctor to review.</p></div>
-            </div>
-            <div class="dash-footer"><span><i class="tiny-lock" aria-hidden="true"></i> Access should be role-controlled</span><span>VaidyaLoop concept</span></div>
-          </div>
-          <div class="floating-note note-appointments"><span class="floating-icon">↗</span><div><strong>One appointment view</strong><small>Online + walk-ins</small></div></div>
-          <div class="floating-note note-history"><span class="floating-icon mint-icon">◎</span><div><strong>Patient context</strong><small>Before the visit begins</small></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="proof-strip" aria-label="Product principles">
-      <div class="container proof-items">
-        <div><span class="proof-symbol">01</span><span><strong>Designed for daily use</strong><small>Reception to consultation</small></span></div>
-        <div><span class="proof-symbol">02</span><span><strong>One connected workflow</strong><small>Less switching between tools</small></span></div>
-        <div><span class="proof-symbol">03</span><span><strong>Built to expand</strong><small>Clinic first, hospital next</small></span></div>
-      </div>
-    </section>
-
-    <section class="section-pad value-overview" id="benefits">
-      <div class="container">
-        <div class="section-heading center-heading">
-          <span class="eyebrow">More than appointment software</span>
-          <h2>Digitalise the daily work behind your clinic.</h2>
-          <p>VaidyaLoop is planned as a connected workspace—from a patient's first online booking to the doctor's notes, the pharmacy bill and the owner's daily review.</p>
-        </div>
-        <div class="value-grid">
-          <article class="value-card value-featured"><span class="value-icon">↗</span><h3>Your clinic, visible online</h3><p>Give patients a dedicated clinic page where they can check available timings, request or book an appointment and, where you choose, pay before the visit. Advance payment can help reduce last-minute no-shows, though it cannot eliminate them.</p><span class="value-proof">Online presence · Booking · Optional advance payment</span></article>
-          <article class="value-card"><span class="value-icon">▤</span><h3>Replace scattered registers</h3><p>Digitise appointment books, patient history, receipts, staff attendance and inventory records. Search information instead of searching through multiple registers.</p><span class="value-proof">Phone · Tablet · Computer</span></article>
-          <article class="value-card"><span class="value-icon">✳</span><h3>AI for patient and staff preparation</h3><p>Planned AI tools can summarise available patient records and propose duty rosters for review, reducing repetitive searching and manual scheduling.</p><span class="value-proof">Human-reviewed suggestions</span></article>
-          <article class="value-card"><span class="value-icon">₹</span><h3>Understand the business</h3><p>Bring billing, pharmacy sales, expenses, inventory and daily/monthly/yearly reports into a clearer view to support decisions.</p><span class="value-proof">Records you can reconcile</span></article>
-          <article class="value-card"><span class="value-icon">◎</span><h3>Build a digital presence in your city</h3><p>Give patients a convenient way to discover your clinic and request appointments online. Be among the early local providers making booking and clinic information available digitally.</p><span class="value-proof">A shareable clinic page · Mobile-first booking</span></article>
-          <article class="value-card"><span class="value-icon">↗</span><h3>Future-ready from the start</h3><p>Begin with OPD and daily administration, then plan for in-patient records, bed management, doctor rounds and deeper accounting when your requirements grow.</p><span class="value-proof">Start practical · Expand in stages</span></article>
-        </div>
-        <div class="founding-clinic-banner">
-          <div class="founding-badge">FOUNDING CUSTOMER PROGRAM</div>
-          <div class="founding-copy"><h3>First 100 clinics and hospitals: let's shape the workflow around you.</h3><p>For the first 100 participating clinics and hospitals, bring us the repetitive workflow you want to digitise—registers, queues, forms, approvals or reports. We will work with your team to design a simpler digital version and customise the agreed flow, scope and delivery plan.</p></div>
-          <div class="founding-action"><a class="btn btn-primary" href="#contact">Discuss a tailored setup <span aria-hidden="true">→</span></a><small>Scope and timelines agreed during discovery.</small></div>
-        </div>
-        <div class="support-highlight"><div class="support-icon" aria-hidden="true">24/7</div><div><strong>Training and support planned around clinic hours—not office hours.</strong><p>Your clinic shouldn't have to wait for help—not even after hours. Because clinic work can't wait. Our proposed support commitment is designed to help your team get started and get help when it matters. Confirm service coverage and response terms before rollout.</p></div></div>
-      </div>
-    </section>
-
-    <section class="section-pad section-white" id="platform">
-      <div class="container">
-        <div class="section-heading center-heading">
-          <span class="eyebrow">The platform</span>
-          <h2>Everything important, in the flow of work.</h2>
-          <p>Each module has a practical purpose: reduce repeated administration, keep information easy to find and help the team act on it.</p>
-        </div>
-        <div class="interactive-platform">
-          <div class="platform-tabs" role="tablist" aria-label="Explore product views">
-            <button class="platform-tab active" role="tab" aria-selected="true" aria-controls="platform-panel" id="tab-flow" data-view="flow">Clinic day</button>
-            <button class="platform-tab" role="tab" aria-selected="false" aria-controls="platform-panel" id="tab-patient" data-view="patient">Patient overview</button>
-            <button class="platform-tab" role="tab" aria-selected="false" aria-controls="platform-panel" id="tab-revenue" data-view="revenue">Business view</button>
-          </div>
-          <div class="platform-panel" id="platform-panel" role="tabpanel" aria-labelledby="tab-flow" tabindex="0">
-            <div class="platform-panel-copy">
-              <span class="panel-label" id="panel-label">A connected clinic day</span>
-              <h3 id="panel-title">From arrival to receipt, without losing the thread.</h3>
-              <p id="panel-description">Online bookings, phone bookings and walk-ins appear in the same operating view. Staff can check people in, issue tokens and update the appointment status as the clinic moves through the day.</p>
-              <ul class="check-list" id="panel-list">
-                <li><span>✓</span> Keep a single view of today's schedule</li>
-                <li><span>✓</span> Track normal, priority and emergency-marked arrivals</li>
-                <li><span>✓</span> Hand off the patient to consultation and billing</li>
-              </ul>
-              <a class="text-link" href="#contact">Discuss your workflow <span aria-hidden="true">→</span></a>
-            </div>
-            <div class="panel-visual" id="panel-visual">
-              <div class="mini-window">
-                <div class="mini-window-bar"><span></span><span></span><span></span><strong>Appointments</strong><small>Today</small></div>
-                <div class="mini-toolbar"><span>All visits <b>24</b></span><span>Waiting <b>5</b></span><span>Completed <b>8</b></span></div>
-                <div class="mini-table-head"><span>Patient / token</span><span>Type</span><span>Status</span></div>
-                <div class="mini-table-row"><span><b>Token 08</b><small>Meera K.</small></span><em class="tag-normal">Normal</em><span class="mini-status">Waiting</span></div>
-                <div class="mini-table-row"><span><b>Token 09</b><small>Arjun S.</small></span><em class="tag-priority">Priority</em><span class="mini-status">Checked in</span></div>
-                <div class="mini-table-row"><span><b>Token 10</b><small>R. Khan</small></span><em class="tag-online">Online</em><span class="mini-status">Confirmed</span></div>
-                <div class="mini-table-row"><span><b>Token 11</b><small>P. Joshi</small></span><em class="tag-normal">Normal</em><span class="mini-status">Booked</span></div>
-                <div class="mini-window-foot"><span class="tiny-check">✓</span> Illustrative interface · Not live patient data</div>
-              </div>
-            </div>
-          </div>
-          <p class="interaction-hint"><span aria-hidden="true">↳</span> Select another view above to explore how the same system supports consultation and clinic decisions.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad section-soft" id="appointments">
-      <div class="container split-section">
-        <div class="section-copy">
-          <span class="eyebrow">01 / Patient access</span>
-          <h2>A clinic people can find and book—without adding work for the front desk.</h2>
-          <p class="section-intro">A dedicated booking page gives your clinic an online point of presence. Patients can check doctor availability and request an appointment when it suits them, while staff retain control of the schedule.</p>
-          <div class="benefit-list">
-            <article class="benefit-item"><span class="benefit-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M7 3v4m10-4v4M3 10h18M8 14h3m-3 3h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><div><h3>Fewer calls just to check availability</h3><p>Show clinic timings, doctor profiles, consultation fees and available slots in one place. Staff can still enter calls and walk-ins into the same calendar.</p></div></article>
-            <article class="benefit-item"><span class="benefit-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="15" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M3 10h18M7 15h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><div><h3>Payment before the visit, when appropriate</h3><p>Let the clinic choose whether a patient pays online in advance or at the counter. Advance payment may reduce casual no-shows, but it cannot guarantee attendance.</p></div></article>
-            <article class="benefit-item"><span class="benefit-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M20 11.5A8.3 8.3 0 0 1 11.7 20a8.8 8.8 0 0 1-4-.9L3 20l1.1-4.4A8.3 8.3 0 1 1 20 11.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m8 12 2.3 2.2L16 8.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Clear self-service changes</h3><p>Allow patients to cancel or reschedule according to the clinic's policy, rather than making repeated calls. The clinic can reopen a cancelled slot and manage its waitlist.</p></div></article>
-          </div>
-          <a class="btn btn-primary" href="#contact">Plan your clinic booking page <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="booking-demo-card" aria-label="Illustrative online booking screen">
-          <div class="booking-demo-top"><div class="clinic-avatar">V</div><div><strong>Green Valley Clinic</strong><small>Sample clinic page</small></div><span class="online-pill"><i></i> Online</span></div>
-          <div class="booking-demo-body"><span class="mini-label">BOOK A CONSULTATION</span><h3>Choose a doctor</h3><p>See available slots and select a time that works for you.</p>
-            <div class="doctor-choice selected"><span class="doctor-avatar avatar-one">AS</span><span class="doctor-detail"><strong>Dr. A. Sharma</strong><small>General medicine · 15 min</small></span><span class="radio-check">✓</span></div>
-            <div class="date-selector"><span><small>MON</small><b>14</b></span><span class="selected-day"><small>TUE</small><b>15</b></span><span><small>WED</small><b>16</b></span><span><small>THU</small><b>17</b></span></div>
-            <div class="slot-grid"><button type="button" class="slot-choice">10:00 AM</button><button type="button" class="slot-choice selected">10:30 AM</button><button type="button" class="slot-choice">11:15 AM</button><button type="button" class="slot-choice">12:00 PM</button></div>
-            <div class="booking-summary"><span>Consultation fee</span><strong>₹ — <small>Set by clinic</small></strong></div>
-            <div class="demo-book-btn">Continue to booking <span>→</span></div>
-            <p class="micro-note">Illustrative UI. Availability, payment, cancellation and refund rules would be configured for each clinic.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad device-section" id="digital-register">
-      <div class="container device-layout">
-        <div class="section-copy device-copy">
-          <span class="eyebrow">One secure workspace · Every device</span>
-          <h2>Move the registers to a phone, tablet or computer.</h2>
-          <p class="section-intro">Appointment books, patient histories, receipts and staff registers do not have to remain in separate notebooks. VaidyaLoop is being designed so authorised team members can find the information they need from a suitable device—at reception, in the consultation room or while checking operations elsewhere.</p>
-          <div class="device-benefits">
-            <div><span>✓</span><div><strong>Find instead of flip through pages</strong><p>Search a patient, visit, invoice or stock item by the information captured in the system.</p></div></div>
-            <div><span>✓</span><div><strong>Keep the team in sync</strong><p>Reception, doctor and billing staff work from the same updated record with access controlled by their roles.</p></div></div>
-            <div><span>✓</span><div><strong>Use the device that fits the task</strong><p>A phone for quick checks, a tablet at the bedside or in the room, and a computer for reports and detailed data entry.</p></div></div>
-          </div>
-          <p class="inline-note"><strong>Designed for practical access:</strong> secure access from anywhere requires an internet connection for cloud functions and appropriate staff permissions. Offline behaviour and device support must be confirmed during implementation.</p>
-          <a class="btn btn-primary" href="#contact">Discuss digitising your registers <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="device-showcase" aria-label="Illustrative VaidyaLoop interface on desktop, tablet and mobile">
-          <div class="device-desktop">
-            <div class="device-topbar"><span class="device-logo-dot">V</span><strong>Clinic workspace</strong><small>Overview · Illustrative</small></div>
-            <div class="device-desktop-body"><aside><span class="side-active">Overview</span><span>Appointments</span><span>Patients</span><span>Billing</span><span>Staff</span></aside><div class="device-screen-main"><div class="device-greeting"><small>WEDNESDAY · CLINIC OVERVIEW</small><b>Your clinic at a glance</b></div><div class="device-kpis"><div><small>Patients today</small><strong>24</strong></div><div><small>Pending follow-ups</small><strong>06</strong></div><div><small>Receipts</small><strong>18</strong></div></div><div class="device-list-head"><b>Recent activity</b><small>Sample records</small></div><div class="device-list-row"><i></i><span><b>Appointment checked in</b><small>Patient record updated</small></span><em>Today</em></div><div class="device-list-row"><i></i><span><b>Receipt created</b><small>Consultation billing</small></span><em>Today</em></div><div class="device-list-row"><i></i><span><b>Follow-up reminder due</b><small>Review scheduled messages</small></span><em>Pending</em></div></div></div>
-          </div>
-          <div class="device-tablet"><div class="device-tablet-bar"><strong>Patient overview</strong><span>● Secure access concept</span></div><div class="device-tablet-patient"><span class="device-avatar">MK</span><div><b>Meera K., 58 F</b><small>Example patient · fictional data</small></div></div><div class="device-tablet-summary"><b>Patient brief <em>Review required</em></b><p>Last visit 12 Aug: knee pain, advised rest. Allergy recorded: <strong>Penicillin</strong>. 1 follow-up pending.</p><small>↳ Source notes one tap away</small></div></div>
-          <div class="device-phone"><div class="phone-speaker"></div><div class="phone-screen"><div class="phone-greeting"><small>VAIDYALOOP</small><b>Today's clinic</b></div><div class="phone-kpi"><span>Appointments</span><strong>24</strong></div><div class="phone-row"><span class="phone-row-icon">✓</span><div><b>Reception queue</b><small>5 waiting</small></div><span>›</span></div><div class="phone-row"><span class="phone-row-icon mint">₹</span><div><b>Billing</b><small>Receipts and balances</small></div><span>›</span></div><div class="phone-row"><span class="phone-row-icon blue">▤</span><div><b>Staff attendance</b><small>Today's roster</small></div><span>›</span></div></div></div>
-          <div class="device-caption"><span>Phone</span><span>Tablet</span><span>Computer</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad section-white" id="walk-ins">
-      <div class="container split-section reverse-mobile">
-        <div class="queue-visual-wrap">
-          <div class="queue-board">
-            <div class="queue-board-head"><div><span class="mini-label">FRONT DESK VIEW</span><h3>Today's queue</h3></div><div class="queue-count"><strong>12</strong><small>checked in</small></div></div>
-            <div class="queue-metrics"><div><span>Waiting</span><strong>05</strong></div><div><span>In consultation</span><strong>02</strong></div><div><span>Completed</span><strong>08</strong></div></div>
-            <div class="queue-ticket ticket-emergency"><div class="ticket-number">E-01</div><div class="ticket-main"><strong>Emergency-marked</strong><small>Flag for immediate staff review</small></div><span class="ticket-label emergency-label">Urgent</span></div>
-            <div class="queue-ticket ticket-priority"><div class="ticket-number">P-04</div><div class="ticket-main"><strong>Priority</strong><small>Clinic-defined priority rule</small></div><span class="ticket-label priority-label">Priority</span></div>
-            <div class="queue-ticket"><div class="ticket-number">N-08</div><div class="ticket-main"><strong>Normal visit</strong><small>Walk-in · checked in 10:25</small></div><span class="ticket-label normal-label">Waiting</span></div>
-            <div class="queue-ticket"><div class="ticket-number">N-09</div><div class="ticket-main"><strong>Normal visit</strong><small>Walk-in · checked in 10:31</small></div><span class="ticket-label normal-label">Waiting</span></div>
-            <div class="queue-board-foot"><span class="status-dot"></span> Queue statuses can be updated by authorized staff</div>
-          </div>
-          <div class="queue-callout"><span class="callout-icon">↗</span><span><strong>One queue for arrivals</strong><small>Online bookings and walk-ins together</small></span></div>
-        </div>
-        <div class="section-copy">
-          <span class="eyebrow">02 / Front desk operations</span>
-          <h2>Walk-in patients need a clear process, too.</h2>
-          <p class="section-intro">Online booking cannot replace the reality of a busy clinic. VaidyaLoop is planned to combine scheduled appointments and walk-ins in one queue, so the front desk can see who has arrived, who is waiting and which patient needs staff attention.</p>
-          <div class="priority-explainer">
-            <div class="priority-line"><span class="priority-dot dot-normal"></span><div><strong>Normal</strong><p>Routine visit placed in the regular token sequence.</p></div></div>
-            <div class="priority-line"><span class="priority-dot dot-priority"></span><div><strong>Priority</strong><p>For clinic-defined cases such as a patient who needs an adjusted order. Staff must apply the clinic's policy.</p></div></div>
-            <div class="priority-line"><span class="priority-dot dot-emergency"></span><div><strong>Emergency-marked</strong><p>Flags the front desk to alert qualified clinical staff immediately. A software token does not perform triage or replace emergency judgement.</p></div></div>
-          </div>
-          <p class="inline-note"><strong>Why it matters:</strong> fewer “Who is next?” interruptions, clearer waiting status and a record of how the queue moved through the day.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad ai-section" id="ai-history">
-      <div class="container ai-layout">
-        <div class="ai-copy">
-          <span class="eyebrow eyebrow-light">03 / AI-assisted patient history</span>
-          <h2>Know the history before the patient enters the room.</h2>
-          <p class="ai-intro">Instead of opening several old prescriptions and notes one by one, a doctor can start with a concise summary of the information already recorded in the clinic system—then check the original entries as needed.</p>
-          <div class="ai-benefit-grid">
-            <div><span class="ai-check">✓</span><div><strong>Prepare faster</strong><p>Bring relevant previous visits, documented medicines and follow-ups into a brief view.</p></div></div>
-            <div><span class="ai-check">✓</span><div><strong>Make room for conversation</strong><p>Spend less of the appointment searching for context and more time listening to the patient's current concern.</p></div></div>
-            <div><span class="ai-check">✓</span><div><strong>Support continuity</strong><p>See what was recorded previously and what should be checked again, without assuming that older information is still current.</p></div></div>
-          </div>
-          <div class="ai-disclaimer"><span aria-hidden="true">ⓘ</span><p><strong>Clinician stays in control.</strong> AI summaries are a planned assistive feature, not a diagnosis. They must show their source context, flag missing information and be reviewed by the clinician. Accuracy and time saved must be validated before clinical use.</p></div>
-        </div>
-        <div class="patient-brief-card">
-          <div class="patient-brief-header"><div><span class="mini-label">PATIENT OVERVIEW</span><h3>Meera K., 58 F <span class="sample-chip">Example</span></h3><p>Illustrative patient record · Fictional data</p></div><div class="patient-avatar">MK</div></div>
-          <div class="patient-quick-facts"><div><small>Last visit</small><strong>12 Aug</strong></div><div><small>Recorded allergy</small><strong class="allergy-emphasis">Penicillin</strong></div><div><small>Follow-up</small><strong>1 pending</strong></div></div>
-          <div class="brief-tabs" role="tablist" aria-label="Patient overview tabs">
-            <button class="brief-tab active" type="button" role="tab" aria-selected="true" data-brief="summary">AI brief</button>
-            <button class="brief-tab" type="button" role="tab" aria-selected="false" data-brief="timeline">Visit history</button>
-            <button class="brief-tab" type="button" role="tab" aria-selected="false" data-brief="medicines">Recorded medicines</button>
-          </div>
-          <div class="brief-content" id="brief-content" role="tabpanel" tabindex="0" aria-live="polite">
-            <div class="brief-heading"><span class="ai-spark">✳</span><div><strong>Patient brief <em class="review-required">Review required</em></strong><small>Generated from available record entries</small></div></div>
-            <div class="patient-name-line"><strong>Meera K., 58 F</strong><span>Example patient · fictional data</span></div>
-            <div class="summary-point"><span>01</span><p><strong>Last visit 12 Aug:</strong> knee pain; advised rest.</p></div>
-            <div class="summary-point"><span>02</span><p><strong>Allergy recorded:</strong> <strong class="allergy-emphasis">Penicillin</strong>.</p></div>
-            <div class="summary-point"><span>03</span><p><strong>1 follow-up pending.</strong> Confirm its status with the patient.</p></div>
-            <button class="source-link source-link-action source-note-open" type="button" data-open-source-notes><span class="source-mark">↳</span> Source notes one tap away</button>
-          </div>
-          <details class="source-notes-details" id="notes-example"><summary>View example source note</summary><p>12 Aug consultation: knee pain documented; rest advised. Allergy field records Penicillin. Follow-up status: pending. This is fictional sample content, not a real medical record.</p></details>
-          <div class="patient-brief-footer"><span><i class="tiny-lock" aria-hidden="true"></i> Access should follow clinic permissions</span><span>Concept preview</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad section-soft" id="reminders">
-      <div class="container split-section reminders-layout">
-        <div class="section-copy">
-          <span class="eyebrow">04 / Follow-up reminders</span>
-          <h2>Help patients remember the next visit.</h2>
-          <p class="section-intro">A follow-up is only useful if the patient remembers it and knows when to return. VaidyaLoop is planned to let staff record a follow-up date and send a reminder through the clinic's chosen communication channel.</p>
-          <ul class="check-list large-checks">
-            <li><span>✓</span> Reminders before scheduled visits</li>
-            <li><span>✓</span> Clear appointment date, time and clinic details</li>
-            <li><span>✓</span> Cancellation or rescheduling link where supported</li>
-            <li><span>✓</span> A record of reminder status where the provider supports it</li>
-          </ul>
-          <p class="inline-note">Reminders can reduce forgetfulness, but delivery depends on the messaging provider, contact details and patient preferences. The clinic should control timing, consent and opt-out handling.</p>
-        </div>
-        <div class="reminder-visual">
-          <div class="message-card message-back"><span class="msg-kicker">VaidyaLoop · Reminder preview</span><p>Your appointment at Green Valley Clinic is scheduled for tomorrow at 10:30 AM.</p><small>Sample message · Not sent</small></div>
-          <div class="message-card message-front"><div class="message-app-head"><span class="message-avatar">V</span><div><strong>Clinic reminder</strong><small>Appointment notification</small></div><span class="message-time">10:05 AM</span></div><div class="message-bubble"><p>Hello, this is a reminder for your upcoming appointment.</p><div class="message-details"><span>Doctor</span><strong>Dr. A. Sharma</strong><span>Date and time</span><strong>15 Oct · 10:30 AM</strong><span>Location</span><strong>Green Valley Clinic</strong></div><p>Please contact the clinic if you need to reschedule.</p><small>Illustrative reminder only</small></div><div class="message-card-footer"><span>✓</span> Example notification flow</div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad section-white" id="operations">
-      <div class="container">
-        <div class="section-heading center-heading"><span class="eyebrow">05 / Business and clinic operations</span><h2>Know what is happening beyond the consultation room.</h2><p>Use daily records to make decisions about patient flow, money, stock and staffing. Reports are only as reliable as the information the clinic records.</p></div>
-        <div class="operations-grid">
-          <article class="operation-card reports-card"><div class="operation-icon icon-blue"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5m0 14h17M7 15l4-4 3 2 5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span class="operation-number">01</span><h3>Reports and performance</h3><p>Review how many patients were seen each day, appointments completed, repeat visits, cancellations and doctor-wise activity. Compare daily, monthly and yearly collections to understand operational patterns.</p><div class="mini-chart" aria-label="Illustrative patient volume chart"><div class="chart-legend"><span><i class="legend-dot teal-dot"></i>Patients seen</span><span>Illustrative</span></div><div class="bar-chart"><span style="--bar:44%"><i></i><small>M</small></span><span style="--bar:63%"><i></i><small>T</small></span><span style="--bar:52%"><i></i><small>W</small></span><span style="--bar:84%"><i></i><small>T</small></span><span style="--bar:70%"><i></i><small>F</small></span><span style="--bar:95%"><i></i><small>S</small></span><span style="--bar:36%"><i></i><small>S</small></span></div></div><ul class="mini-feature-list"><li>Daily, monthly and yearly views</li><li>Patient volume and revenue trends</li><li>Collections and outstanding amounts</li></ul></article>
-          <article class="operation-card finance-card"><div class="operation-icon icon-green"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 10h18m-13 5h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="operation-number">02</span><h3>Billing and receipts</h3><p>Generate an itemised bill for consultations, procedures, medicines and other configured services. Record cash, UPI and online payments, partial payments, refunds and balance due.</p><div class="receipt-demo"><div class="receipt-top"><strong>PAYMENT RECEIPT</strong><span>Sample</span></div><div class="receipt-line"><span>Consultation</span><b>₹ —</b></div><div class="receipt-line"><span>Medicines</span><b>₹ —</b></div><div class="receipt-line"><span>Other services</span><b>₹ —</b></div><div class="receipt-total"><span>Total payable</span><strong>Configured amount</strong></div><div class="receipt-stamp">Illustrative receipt</div></div><ul class="mini-feature-list"><li>Consistent billing and receipts</li><li>Track payments and refunds</li><li>Daily collection reconciliation</li></ul></article>
-          <article class="operation-card pharmacy-card"><div class="operation-icon icon-orange"><svg viewBox="0 0 24 24" fill="none"><path d="M9 3h6v4H9zM7 7h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.7"/><path d="M12 10v7m-3.5-3.5h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div><span class="operation-number">03</span><h3>Pharmacy and inventory</h3><p>Track medicines by item, batch, expiry and available quantity. Link dispensing to the bill, record purchases and returns, and flag items that are running low or nearing expiry.</p><div class="stock-demo"><div class="stock-row"><span class="stock-pill stock-ok"></span><div><strong>Medicine A</strong><small>Stock level</small></div><span class="stock-level">In range</span></div><div class="stock-row"><span class="stock-pill stock-low"></span><div><strong>Medicine B</strong><small>Stock level</small></div><span class="stock-level low-text">Low stock</span></div><div class="stock-row"><span class="stock-pill stock-exp"></span><div><strong>Medicine C</strong><small>Expiry review</small></div><span class="stock-level exp-text">Check batch</span></div></div><ul class="mini-feature-list"><li>Purchase and dispensing records</li><li>Expiry and low-stock alerts</li><li>Stock movement and valuation</li></ul></article>
-          <article class="operation-card staff-card"><div class="operation-icon icon-purple"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 20v-1.5A4.5 4.5 0 0 1 8 14h2a4.5 4.5 0 0 1 4.5 4.5V20M16 5.5a3 3 0 0 1 0 5.8M17 14h.5a3.5 3.5 0 0 1 3.5 3.5V20" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div><span class="operation-number">04</span><h3>Staff management</h3><p>Keep employee details, role, branch and contact information together. Record attendance, route leave requests to a manager and understand who is scheduled to work.</p><div class="staff-demo"><div class="staff-demo-head"><strong>Team overview</strong><span>Sample</span></div><div class="staff-avatars"><span>AS</span><span>RK</span><span>PM</span><span>+2</span></div><div class="staff-status-row"><span><i class="staff-status-dot present"></i>Present</span><strong>08</strong></div><div class="staff-status-row"><span><i class="staff-status-dot leave"></i>On leave</span><strong>01</strong></div><div class="staff-status-row"><span><i class="staff-status-dot pending"></i>Leave awaiting review</span><strong>02</strong></div></div><ul class="mini-feature-list"><li>Employee profiles and records</li><li>Attendance and leave workflow</li><li>Role-based access to information</li></ul></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad roster-section" id="roster-planner">
-      <div class="container roster-layout">
-        <div class="section-copy roster-copy">
-          <span class="eyebrow">AI-assisted staff planning</span>
-          <h2>Plan duty rosters without rebuilding the schedule from scratch.</h2>
-          <p class="section-intro">The proposed AI roster planner would prepare a draft from staff availability, approved leave, roles, required shift coverage and clinic rules. The manager can review gaps, resolve conflicts and approve the schedule instead of manually allocating every duty each time.</p>
-          <div class="roster-benefit-list">
-            <div><span>✓</span><div><strong>Consider availability and leave</strong><p>Use updated staff availability and approved leave to avoid assigning people who are unavailable.</p></div></div>
-            <div><span>✓</span><div><strong>Check coverage and role requirements</strong><p>Flag shifts that lack the required role or have more people assigned than needed.</p></div></div>
-            <div><span>✓</span><div><strong>Keep the manager in control</strong><p>AI proposes a draft; an authorised manager reviews and approves it. Changes remain traceable.</p></div></div>
-          </div>
-          <p class="inline-note"><strong>Important:</strong> the planner is an upcoming concept. Final scheduling rules, applicable working-hour policies and approvals must be configured with the facility.</p>
-        </div>
-        <div class="roster-demo-card">
-          <div class="roster-demo-head"><div><span class="mini-label">DUTY ROSTER PLANNER</span><h3>Weekly staff plan</h3><p>Illustrative schedule · Draft for review</p></div><span class="roster-status">Draft</span></div>
-          <div class="roster-filters"><span>Week view</span><span>All departments</span><span>3 roles</span></div>
-          <div class="roster-table-wrap"><table class="roster-table"><thead><tr><th>Team member</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr></thead><tbody><tr><td><b>R. Verma</b><small>Nursing</small></td><td><i class="shift-day">M</i></td><td><i class="shift-day">M</i></td><td><i class="shift-off">Off</i></td><td><i class="shift-day">M</i></td><td><i class="shift-day">M</i></td></tr><tr><td><b>P. Mishra</b><small>Reception</small></td><td><i class="shift-day">D</i></td><td><i class="shift-day">D</i></td><td><i class="shift-day">D</i></td><td><i class="shift-off">Off</i></td><td><i class="shift-day">D</i></td></tr><tr><td><b>A. Khan</b><small>Pharmacy</small></td><td><i class="shift-day">D</i></td><td><i class="shift-off">Off</i></td><td><i class="shift-day">D</i></td><td><i class="shift-day">D</i></td><td><i class="shift-day">D</i></td></tr></tbody></table></div>
-          <div class="roster-draft-check"><span class="roster-check-icon">✳</span><div><strong>Suggested checks before approval</strong><p>Confirm coverage on Tuesday, verify approved leave and review any shift-hour rules.</p></div></div>
-          <button class="roster-explain-toggle" type="button" aria-expanded="false" aria-controls="roster-rule-detail">See what the planner considers <span aria-hidden="true">＋</span></button>
-          <div class="roster-rule-detail" id="roster-rule-detail" hidden><ul><li>Staff roles and required coverage</li><li>Availability and approved leave</li><li>Configured shift hours and rest rules</li><li>Fair distribution of duties where possible</li><li>Manager overrides and approval history</li></ul></div>
-          <div class="roster-demo-foot"><span>AI-assisted draft · Manager approval required</span><span>Concept preview</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad accounting-section" id="accounting">
-      <div class="container accounting-layout">
-        <div class="section-copy"><span class="eyebrow">06 / Financial clarity</span><h2>Connect bills, pharmacy, expenses and collections.</h2><p class="section-intro">An end-to-end accounting layer is planned to help owners understand where money came from, where it went and which amounts still need attention. It should build from recorded transactions—not replace professional accounting advice.</p><div class="accounting-points"><div><span class="number-check">01</span><div><strong>Revenue and payment records</strong><p>Consultation charges, procedures, pharmacy sales, refunds and payment mode.</p></div></div><div><span class="number-check">02</span><div><strong>Expenses and suppliers</strong><p>Record expense categories, supplier purchases, payables and supporting documents.</p></div></div><div><span class="number-check">03</span><div><strong>Pharmacy revenue visibility</strong><p>Compare medicines prescribed with medicines dispensed and sold through the clinic pharmacy where both records exist. This can flag possible outside purchases, but cannot prove a lost sale by itself.</p></div></div><div><span class="number-check">04</span><div><strong>Reconciliation and exports</strong><p>Compare recorded payments with gateway/bank settlements and export reports for the accountant.</p></div></div></div></div>
-        <div class="accounting-visual"><div class="accounts-window"><div class="accounts-header"><div><span class="mini-label">OWNER'S SUMMARY</span><h3>Financial overview</h3></div><span class="period-selector">This month ▾</span></div><div class="accounts-kpis"><div><small>Recorded revenue</small><strong>₹ —</strong><span>Based on entries</span></div><div><small>Recorded expenses</small><strong>₹ —</strong><span>Based on entries</span></div></div><div class="income-expense-chart"><div class="chart-caption"><strong>Income and expenses</strong><small>Illustrative view</small></div><div class="chart-grid-lines"><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 330 120" class="line-chart" role="img" aria-label="Illustrative income and expense trend"><path d="M7 92 C35 85 42 58 68 65 S105 83 130 43 S170 62 194 36 S236 44 255 25 S300 31 323 12" fill="none" stroke="#238f82" stroke-width="3" stroke-linecap="round"/><path d="M7 103 C36 97 43 89 68 91 S105 74 130 82 S167 69 194 77 S235 64 255 72 S299 57 323 62" fill="none" stroke="#e5ad54" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 5"/></svg><div class="chart-key"><span><i class="legend-dot teal-dot"></i>Revenue</span><span><i class="legend-dot gold-dot"></i>Expenses</span></div></div><div class="accounts-footer"><span><i class="tiny-lock" aria-hidden="true"></i> Actual reports depend on complete entries</span><span>Concept preview</span></div></div><div class="accounting-callout"><span class="callout-icon gold-callout">₹</span><div><strong>Find the questions worth investigating</strong><small>Unpaid bills · unusual stock movement · unrecorded expenses</small></div></div></div>
-      </div>
-    </section>
-
-    <section class="section-pad section-white" id="roadmap">
-      <div class="container">
-        <div class="section-heading center-heading"><span class="eyebrow">Product roadmap</span><h2>Start with the clinic. Extend when you're ready.</h2><p>These are planned capabilities. Availability depends on product development, validation and implementation requirements.</p></div>
-        <div class="roadmap-grid">
-          <article class="roadmap-card roadmap-now"><div class="roadmap-label"><span></span> Initial focus</div><h3>Outpatient operations</h3><p>Appointments, walk-in tokens, doctor schedule, patient history, AI-assisted visit summaries, reminders, billing, pharmacy, staff and operational reports.</p><div class="roadmap-foot">Designed for an incremental rollout</div></article>
-          <article class="roadmap-card"><div class="roadmap-label planned-label"><span></span> Upcoming</div><h3>In-patient journey and beds</h3><p>Bed/ward availability, admission, transfer, daily doctor rounds, nursing tasks, treatment notes and discharge coordination—connected to the patient's record.</p><div class="roadmap-foot">Planned · Not represented as available today</div></article>
-          <article class="roadmap-card"><div class="roadmap-label planned-label"><span></span> Upcoming</div><h3>Critical resource monitoring</h3><p>Review workflows for oxygen inventory or capacity, blood-bank stock/expiry and critical alerts. Real-time monitoring would require validated processes, integrations and human escalation.</p><div class="roadmap-foot">Planned · Not a replacement for clinical monitoring</div></article>
-          <article class="roadmap-card"><div class="roadmap-label planned-label"><span></span> Upcoming</div><h3>Queries and end-to-end accounts</h3><p>Track patient or staff queries from creation through assignment and resolution. Expand accounting to expenses, suppliers, reconciliation, ledgers and accountant-ready exports.</p><div class="roadmap-foot">Planned · Scope to be defined with users</div></article>
-        </div>
-        <div class="rounds-feature"><div class="rounds-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4zM8 9h8M8 13h5M8 16h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rounds-copy"><span class="eyebrow">Planned inpatient workflow</span><h3>Doctor rounds, captured at the bedside.</h3><p>On a doctor's phone or tablet, a future rounds view could show assigned in-patients, the day's visit list, latest observations entered by the care team, notes from each round, orders to review and pending tasks. A timestamped daily report would be available after the rounds are recorded.</p></div><div class="rounds-points"><span>Patient list</span><span>Round notes</span><span>Pending tasks</span><span>Daily report</span></div></div>
-      </div>
-    </section>
-
-    <section class="section-pad tailor-section" id="tailored">
-      <div class="container tailor-layout"><div><span class="eyebrow">Built around your requirements</span><h2>Your clinic has its own way of working. The setup should reflect that.</h2><p>Choose which workflows matter most, identify the reports you use and agree on role access before rollout. VaidyaLoop is intended to be configured around practical clinic needs rather than forcing every facility into one fixed process.</p></div><div class="tailor-checks"><div><span>✓</span> Clinic-specific fees and services</div><div><span>✓</span> Doctor schedules and appointment rules</div><div><span>✓</span> Staff roles and branch access</div><div><span>✓</span> Reports relevant to the owner</div><div><span>✓</span> A staged plan for later modules</div><a href="#contact" class="text-link">Discuss a tailored setup <span aria-hidden="true">→</span></a></div></div>
-    </section>
-
-    <section class="section-pad faq-section" id="faq">
-      <div class="container faq-layout"><div class="section-heading"><span class="eyebrow">Questions worth answering</span><h2>Before you choose a clinic system.</h2><p>Clear answers about rollout, payments, AI and future scope.</p></div><div class="faq-list">
-        <details class="faq-item"><summary>Is VaidyaLoop available to use today?</summary><p>This page presents the proposed product and planned capabilities. Availability, supported integrations, pricing and implementation timelines must be confirmed before a clinic signs up.</p></details>
-        <details class="faq-item"><summary>Can patients book online and still walk in?</summary><p>The intended workflow combines online bookings, phone bookings and walk-ins in one clinic queue. The clinic's own scheduling rules would determine slot availability and token handling.</p></details>
-        <details class="faq-item"><summary>Can AI replace the doctor's review of previous prescriptions?</summary><p>No. The intended AI summary is an assistive overview of records already available in the system. The doctor must review relevant source information and use professional judgement.</p></details>
-        <details class="faq-item"><summary>Can the system show revenue lost because a patient bought medicine outside?</summary><p>It can potentially flag differences between prescriptions and pharmacy dispensing/sales records where those records are captured. It cannot know every outside purchase automatically, so the report should be presented as an estimate or follow-up opportunity—not confirmed lost revenue.</p></details>
-        <details class="faq-item"><summary>Will bed, oxygen and blood-bank management be included?</summary><p>These are planned future areas, not presented as current capabilities. Each requires detailed workflows, safety reviews and, where needed, validated integrations and escalation procedures.</p></details>
-        <details class="faq-item"><summary>Can the product be configured for our clinic?</summary><p>The goal is to configure fees, schedules, services, roles and useful reports around the clinic's needs. The feasible setup and any custom work should be agreed during discovery.</p></details>
-      </div></div>
-    </section>
-
-    <section class="section-pad why-section" id="why-vaidhyaloop">
-      <div class="container">
-        <div class="section-heading center-heading"><span class="eyebrow">Why consider VaidyaLoop?</span><h2>Choose the system around the work you need to manage.</h2><p>The value is not just storing information digitally. It is making the information easier to find, act on and review.</p></div>
-        <div class="why-grid">
-          <article class="why-card clinic-why"><div class="why-card-top"><span class="why-icon">✚</span><div><span class="why-kicker">FOR CLINICS</span><h3>Make everyday clinic work simpler.</h3></div></div><ul><li>Offer an online clinic page and let patients book at a time that suits them.</li><li>Choose whether advance payment is required, optional or unavailable for appointments.</li><li>Handle online appointments, phone bookings and walk-ins from one queue.</li><li>Review a patient timeline and AI-assisted history brief before the consultation.</li><li>Record consultations, prescriptions, bills, receipts and follow-up reminders together.</li><li>Check staff attendance, leave, pharmacy stock and daily collections without switching between separate registers.</li><li>Use a phone, tablet or computer with role-appropriate access.</li></ul><a class="text-link" href="#contact">Discuss a clinic setup <span aria-hidden="true">→</span></a></article>
-          <article class="why-card hospital-why"><div class="why-card-top"><span class="why-icon">▦</span><div><span class="why-kicker">FOR SMALL HOSPITALS</span><h3>Build a digital foundation that can grow.</h3></div></div><ul><li>Start with OPD scheduling, patient records, billing, pharmacy and staff operations.</li><li>Keep patient, visit and financial records organised across authorised departments.</li><li>Track collections, expenses, stock movement and outstanding balances more clearly.</li><li>Prepare for future inpatient admissions, bed management, doctor rounds and nursing workflows.</li><li>Plan critical-resource workflows for oxygen and blood-bank monitoring with clear alerts and escalation.</li><li>Expand toward end-to-end accounts and supplier/payable management as requirements are defined.</li><li>Agree a phased rollout rather than introducing every department in one step.</li></ul><a class="text-link" href="#roadmap">Review the upcoming roadmap <span aria-hidden="true">→</span></a></article>
-        </div>
-        <div class="why-footnote">Upcoming hospital workflows are planned capabilities, not represented as available today. Scope, safety requirements and integrations must be confirmed before implementation.</div>
-      </div>
-    </section>
-
-    <section class="section-pad contact-section" id="contact">
-      <div class="container contact-layout">
-        <div class="contact-copy"><span class="eyebrow eyebrow-light">Let's discuss your workflow</span><h2>Show us how your clinic works today.</h2><p>Share the type of clinic you manage and the tasks you want to simplify. We can discuss the current concept, learn your requirements and decide whether a walkthrough is useful.</p><div class="contact-person-card"><div class="contact-person-avatar">SA</div><div><small>Contact person</small><strong>Mr. Shashank Awasthi</strong><a href="tel:+916306028342">+91 6306028342</a></div><a class="phone-circle" href="tel:+916306028342" aria-label="Call Mr. Shashank Awasthi"><svg viewBox="0 0 24 24" fill="none"><path d="M5 4h3l2 5-2 1.5a14 14 0 0 0 5.5 5.5L15 14l5 2v3c0 1-1 1-2 1C10 19 5 14 4 6c0-1 0-2 1-2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></a></div><div class="contact-assurance"><span>✓</span> No patient records are needed to start the conversation. Please do not submit sensitive medical information through this form.</div></div>
-        <form class="contact-form" id="demo-form">
-          <div class="form-heading"><span>REQUEST A WALKTHROUGH</span><h3>Tell us a little about your clinic.</h3><p>Required fields are marked with an asterisk.</p></div>
-          <div class="form-row"><label for="name">Your name <span>*</span><input id="name" name="name" type="text" autocomplete="name" placeholder="e.g. Dr. Anil Sharma" required maxlength="80"></label><label for="role">Your role <span>*</span><select id="role" name="role" required><option value="">Select role</option><option>Doctor / Clinic owner</option><option>Hospital administrator</option><option>Reception / Operations</option><option>Other</option></select></label></div>
-          <label for="clinic">Clinic / hospital name <span>*</span><input id="clinic" name="clinic" type="text" autocomplete="organization" placeholder="Name of your clinic" required maxlength="120"></label>
-          <div class="form-row"><label for="city">City / town <span>*</span><input id="city" name="city" type="text" autocomplete="address-level2" placeholder="Your city or town" required maxlength="80"></label><label for="size">Clinic size <span>*</span><select id="size" name="size" required><option value="">Choose size</option><option>Solo doctor</option><option>2–5 doctors</option><option>6–10 doctors</option><option>Small hospital</option><option>Other</option></select></label></div>
-          <label for="interest">What would you most like to improve? <span>*</span><select id="interest" name="interest" required><option value="">Choose a priority</option><option>Online appointments and queue</option><option>Patient history and AI summary</option><option>Billing, reports and accounting</option><option>Pharmacy and inventory</option><option>Staff management</option><option>In-patient and hospital workflows</option><option>Need help identifying the right fit</option></select></label>
-          <label for="notes">Anything else to discuss? <small>(Optional)</small><textarea id="notes" name="notes" rows="3" maxlength="700" placeholder="Describe the workflow you'd like to improve. Please do not include patient-identifiable or medical information."></textarea></label>
-          <button class="btn btn-primary form-submit" type="submit">Continue on WhatsApp <span aria-hidden="true">→</span></button>
-          <p class="form-footnote">This opens WhatsApp with your message prefilled to <strong>+91 6306028342</strong>. Nothing is sent until you review and send the message in WhatsApp.</p>
-          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-top"><a class="brand footer-brand" href="#top" aria-label="VaidyaLoop home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M12 8.5h9.2a9 9 0 0 1 0 18H17a6 6 0 0 1 0-12h7" stroke="currentColor" stroke-width="3.1" stroke-linecap="round"/><path d="M28 31.5h-9.2a9 9 0 0 1 0-18H23a6 6 0 0 1 0 12h-7" stroke="currentColor" stroke-width="3.1" stroke-linecap="round"/></svg></span><span class="brand-name">Vaidya<span>Loop</span></span></a><p>A proposed clinic and hospital operations platform focused on clarity, continuity and practical workflows.</p><a class="footer-phone" href="tel:+916306028342">+91 6306028342</a></div>
-    <div class="container footer-bottom"><span>© <span id="year">2026</span> VaidyaLoop. Product concept; capabilities and availability are subject to validation and development.</span><div><a href="#platform">Platform</a><a href="#roadmap">Roadmap</a><a href="#contact">Contact</a></div></div>
-  </footer>
-  <a class="mobile-sticky-cta" href="#contact">Discuss your clinic <span aria-hidden="true">→</span></a>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+<div class="container nav-wrap">
+<a aria-label="VaidyaLoop home" class="brand" href="#top">
+<span aria-hidden="true" class="brand-mark">
+<svg fill="none" viewbox="0 0 40 40"><path d="M12 8.5h9.2a9 9 0 0 1 0 18H17a6 6 0 0 1 0-12h7" stroke="currentColor" stroke-linecap="round" stroke-width="3.1"></path><path d="M28 31.5h-9.2a9 9 0 0 1 0-18H23a6 6 0 0 1 0 12h-7" stroke="currentColor" stroke-linecap="round" stroke-width="3.1"></path></svg>
+</span>
+<span class="brand-name">Vaidya<span>Loop</span></span>
+</a>
+<button aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" type="button">
+<span></span><span></span><span></span>
+</button>
+<nav aria-label="Main navigation" class="primary-nav" id="primary-nav">
+<a href="#platform">Platform</a>
+<a href="#ai-history">AI patient history</a>
+<a href="#operations">Operations</a>
+<a href="#roster-planner">AI roster</a>
+<a href="#roadmap">Roadmap</a>
+<a class="nav-cta" href="#contact">Book a walkthrough <span aria-hidden="true">↗</span></a>
+<a aria-label="हिन्दी संस्करण देखें" class="language-switch" href="index-hi.html" lang="hi">हिन्दी</a></nav>
+</div>
+</header>
+<main id="main">
+<section class="hero section-pad">
+<div class="container hero-grid">
+<div class="hero-copy">
+<div class="eyebrow"><span class="eyebrow-dot"></span> Clinic and hospital management, connected</div>
+<h1>Spend less time searching.<br/><span>More time with patients.</span></h1>
+<p class="hero-lead">VaidyaLoop is being designed to bring appointments, patient history, billing, pharmacy and staff operations into one clear workspace—for independent clinics and growing healthcare teams.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#contact">Discuss your clinic's needs <span aria-hidden="true">→</span></a>
+<a class="btn btn-secondary" href="#platform">Explore the platform</a>
+</div>
+<div class="hero-note"><span aria-hidden="true" class="note-icon">✓</span><span>Planned around real clinic workflows, with an incremental path from OPD to broader hospital operations.</span></div>
+<div aria-label="Product focus" class="hero-tags">
+<span>Online clinic presence</span><span>Digital patient records</span><span>AI patient brief</span><span>AI duty roster</span><span>Billing, pharmacy &amp; accounts</span>
+</div>
+</div>
+<div aria-label="Illustrative VaidyaLoop clinic dashboard preview" class="hero-visual">
+<div class="visual-glow"></div>
+<div class="dashboard-card">
+<div class="dash-top">
+<div><span class="dash-kicker">CLINIC OVERVIEW</span><h2>Today's clinic</h2></div>
+<div class="date-pill"><span class="status-dot"></span> Live design preview</div>
+</div>
+<div class="stat-grid">
+<div class="stat-box"><span>Appointments</span><strong>24</strong><small class="positive">8 follow-ups</small></div>
+<div class="stat-box"><span>Checked in</span><strong>11</strong><small>Next token · 12</small></div>
+<div class="stat-box"><span>Collection</span><strong>₹18.4k</strong><small>Recorded today</small></div>
+</div>
+<div class="dash-section-head"><h3>Next in queue</h3><span class="muted-small">Illustrative data</span></div>
+<div class="queue-list">
+<div class="queue-row"><span class="queue-token">08</span><div class="queue-person"><strong>Meera K.</strong><small>Follow-up · 10:30 AM</small></div><span class="queue-status status-ready">Ready</span></div>
+<div class="queue-row"><span class="queue-token priority-token">09</span><div class="queue-person"><strong>Arjun S.</strong><small>Priority · 10:35 AM</small></div><span class="queue-status status-wait">Waiting</span></div>
+</div>
+<div class="ai-preview">
+<div aria-hidden="true" class="ai-preview-icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1" stroke="currentColor" stroke-linecap="round" stroke-width="1.6"></path><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.6"></circle></svg></div>
+<div><div class="ai-title">AI patient brief <span>Concept preview</span></div><p>Recent visit notes, recorded medicines and pending follow-up—summarised for the doctor to review.</p></div>
+</div>
+<div class="dash-footer"><span><i aria-hidden="true" class="tiny-lock"></i> Access should be role-controlled</span><span>VaidyaLoop concept</span></div>
+</div>
+<div class="floating-note note-appointments"><span class="floating-icon">↗</span><div><strong>One appointment view</strong><small>Online + walk-ins</small></div></div>
+<div class="floating-note note-history"><span class="floating-icon mint-icon">◎</span><div><strong>Patient context</strong><small>Before the visit begins</small></div></div>
+</div>
+</div>
+</section>
+<section aria-label="Product principles" class="proof-strip">
+<div class="container proof-items">
+<div><span class="proof-symbol">01</span><span><strong>Designed for daily use</strong><small>Reception to consultation</small></span></div>
+<div><span class="proof-symbol">02</span><span><strong>One connected workflow</strong><small>Less switching between tools</small></span></div>
+<div><span class="proof-symbol">03</span><span><strong>Built to expand</strong><small>Clinic first, hospital next</small></span></div>
+</div>
+</section>
+<section class="section-pad value-overview" id="benefits">
+<div class="container">
+<div class="section-heading center-heading">
+<span class="eyebrow">More than appointment software</span>
+<h2>Digitalise the daily work behind your clinic.</h2>
+<p>VaidyaLoop is planned as a connected workspace—from a patient's first online booking to the doctor's notes, the pharmacy bill and the owner's daily review.</p>
+</div>
+<div class="value-grid">
+<article class="value-card value-featured"><span class="value-icon">↗</span><h3>Your clinic, visible online</h3><p>Give patients a dedicated clinic page where they can check available timings, request or book an appointment and, where you choose, pay before the visit. Advance payment can help reduce last-minute no-shows, though it cannot eliminate them.</p><span class="value-proof">Online presence · Booking · Optional advance payment</span></article>
+<article class="value-card"><span class="value-icon">▤</span><h3>Replace scattered registers</h3><p>Digitise appointment books, patient history, receipts, staff attendance and inventory records. Search information instead of searching through multiple registers.</p><span class="value-proof">Phone · Tablet · Computer</span></article>
+<article class="value-card"><span class="value-icon">✳</span><h3>AI for patient and staff preparation</h3><p>Planned AI tools can summarise available patient records and propose duty rosters for review, reducing repetitive searching and manual scheduling.</p><span class="value-proof">Human-reviewed suggestions</span></article>
+<article class="value-card"><span class="value-icon">₹</span><h3>Understand the business</h3><p>Bring billing, pharmacy sales, expenses, inventory and daily/monthly/yearly reports into a clearer view to support decisions.</p><span class="value-proof">Records you can reconcile</span></article>
+<article class="value-card"><span class="value-icon">◎</span><h3>Build a digital presence in your city</h3><p>Give patients a convenient way to discover your clinic and request appointments online. Be among the early local providers making booking and clinic information available digitally.</p><span class="value-proof">A shareable clinic page · Mobile-first booking</span></article>
+<article class="value-card"><span class="value-icon">↗</span><h3>Future-ready from the start</h3><p>Begin with OPD and daily administration, then plan for in-patient records, bed management, doctor rounds and deeper accounting when your requirements grow.</p><span class="value-proof">Start practical · Expand in stages</span></article>
+</div>
+<div class="founding-clinic-banner">
+<div class="founding-badge">FOUNDING CUSTOMER PROGRAM</div>
+<div class="founding-copy"><h3>First 100 clinics and hospitals: let's shape the workflow around you.</h3><p>For the first 100 participating clinics and hospitals, bring us the repetitive workflow you want to digitise—registers, queues, forms, approvals or reports. We will work with your team to design a simpler digital version and customise the agreed flow, scope and delivery plan.</p></div>
+<div class="founding-action"><a class="btn btn-primary" href="#contact">Discuss a tailored setup <span aria-hidden="true">→</span></a><small>Scope and timelines agreed during discovery.</small></div>
+</div>
+<div class="support-highlight"><div aria-hidden="true" class="support-icon">24/7</div><div><strong>Training and support planned around clinic hours—not office hours.</strong><p>Your clinic shouldn't have to wait for help—not even after hours. Because clinic work can't wait. Our proposed support commitment is designed to help your team get started and get help when it matters. Confirm service coverage and response terms before rollout.</p></div></div>
+</div>
+</section>
+<section class="section-pad section-white" id="platform">
+<div class="container">
+<div class="section-heading center-heading">
+<span class="eyebrow">The platform</span>
+<h2>Everything important, in the flow of work.</h2>
+<p>Each module has a practical purpose: reduce repeated administration, keep information easy to find and help the team act on it.</p>
+</div>
+<div class="interactive-platform">
+<div aria-label="Explore product views" class="platform-tabs" role="tablist">
+<button aria-controls="platform-panel" aria-selected="true" class="platform-tab active" data-view="flow" id="tab-flow" role="tab">Clinic day</button>
+<button aria-controls="platform-panel" aria-selected="false" class="platform-tab" data-view="patient" id="tab-patient" role="tab">Patient overview</button>
+<button aria-controls="platform-panel" aria-selected="false" class="platform-tab" data-view="revenue" id="tab-revenue" role="tab">Business view</button>
+</div>
+<div aria-labelledby="tab-flow" class="platform-panel" id="platform-panel" role="tabpanel" tabindex="0">
+<div class="platform-panel-copy">
+<span class="panel-label" id="panel-label">A connected clinic day</span>
+<h3 id="panel-title">From arrival to receipt, without losing the thread.</h3>
+<p id="panel-description">Online bookings, phone bookings and walk-ins appear in the same operating view. Staff can check people in, issue tokens and update the appointment status as the clinic moves through the day.</p>
+<ul class="check-list" id="panel-list">
+<li><span>✓</span> Keep a single view of today's schedule</li>
+<li><span>✓</span> Track normal, priority and emergency-marked arrivals</li>
+<li><span>✓</span> Hand off the patient to consultation and billing</li>
+</ul>
+<a class="text-link" href="#contact">Discuss your workflow <span aria-hidden="true">→</span></a>
+</div>
+<div class="panel-visual" id="panel-visual">
+<div class="mini-window">
+<div class="mini-window-bar"><span></span><span></span><span></span><strong>Appointments</strong><small>Today</small></div>
+<div class="mini-toolbar"><span>All visits <b>24</b></span><span>Waiting <b>5</b></span><span>Completed <b>8</b></span></div>
+<div class="mini-table-head"><span>Patient / token</span><span>Type</span><span>Status</span></div>
+<div class="mini-table-row"><span><b>Token 08</b><small>Meera K.</small></span><em class="tag-normal">Normal</em><span class="mini-status">Waiting</span></div>
+<div class="mini-table-row"><span><b>Token 09</b><small>Arjun S.</small></span><em class="tag-priority">Priority</em><span class="mini-status">Checked in</span></div>
+<div class="mini-table-row"><span><b>Token 10</b><small>R. Khan</small></span><em class="tag-online">Online</em><span class="mini-status">Confirmed</span></div>
+<div class="mini-table-row"><span><b>Token 11</b><small>P. Joshi</small></span><em class="tag-normal">Normal</em><span class="mini-status">Booked</span></div>
+<div class="mini-window-foot"><span class="tiny-check">✓</span> Illustrative interface · Not live patient data</div>
+</div>
+</div>
+</div>
+<p class="interaction-hint"><span aria-hidden="true">↳</span> Select another view above to explore how the same system supports consultation and clinic decisions.</p>
+</div>
+</div>
+</section>
+<section class="section-pad section-soft" id="appointments">
+<div class="container split-section">
+<div class="section-copy">
+<span class="eyebrow">01 / Patient access</span>
+<h2>A clinic people can find and book—without adding work for the front desk.</h2>
+<p class="section-intro">A dedicated booking page gives your clinic an online point of presence. Patients can check doctor availability and request an appointment when it suits them, while staff retain control of the schedule.</p>
+<div class="benefit-list">
+<article class="benefit-item"><span class="benefit-icon"><svg fill="none" viewbox="0 0 24 24"><rect height="16" rx="2" stroke="currentColor" stroke-width="1.7" width="18" x="3" y="5"></rect><path d="M7 3v4m10-4v4M3 10h18M8 14h3m-3 3h6" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span><div><h3>Fewer calls just to check availability</h3><p>Show clinic timings, doctor profiles, consultation fees and available slots in one place. Staff can still enter calls and walk-ins into the same calendar.</p></div></article>
+<article class="benefit-item"><span class="benefit-icon"><svg fill="none" viewbox="0 0 24 24"><rect height="15" rx="2" stroke="currentColor" stroke-width="1.7" width="18" x="3" y="5"></rect><path d="M3 10h18M7 15h4" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span><div><h3>Payment before the visit, when appropriate</h3><p>Let the clinic choose whether a patient pays online in advance or at the counter. Advance payment may reduce casual no-shows, but it cannot guarantee attendance.</p></div></article>
+<article class="benefit-item"><span class="benefit-icon"><svg fill="none" viewbox="0 0 24 24"><path d="M20 11.5A8.3 8.3 0 0 1 11.7 20a8.8 8.8 0 0 1-4-.9L3 20l1.1-4.4A8.3 8.3 0 1 1 20 11.5Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path><path d="m8 12 2.3 2.2L16 8.8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></svg></span><div><h3>Clear self-service changes</h3><p>Allow patients to cancel or reschedule according to the clinic's policy, rather than making repeated calls. The clinic can reopen a cancelled slot and manage its waitlist.</p></div></article>
+</div>
+<a class="btn btn-primary" href="#contact">Plan your clinic booking page <span aria-hidden="true">→</span></a>
+</div>
+<div aria-label="Illustrative online booking screen" class="booking-demo-card">
+<div class="booking-demo-top"><div class="clinic-avatar">V</div><div><strong>Green Valley Clinic</strong><small>Sample clinic page</small></div><span class="online-pill"><i></i> Online</span></div>
+<div class="booking-demo-body"><span class="mini-label">BOOK A CONSULTATION</span><h3>Choose a doctor</h3><p>See available slots and select a time that works for you.</p>
+<div class="doctor-choice selected"><span class="doctor-avatar avatar-one">AS</span><span class="doctor-detail"><strong>Dr. A. Sharma</strong><small>General medicine · 15 min</small></span><span class="radio-check">✓</span></div>
+<div class="date-selector"><span><small>MON</small><b>14</b></span><span class="selected-day"><small>TUE</small><b>15</b></span><span><small>WED</small><b>16</b></span><span><small>THU</small><b>17</b></span></div>
+<div class="slot-grid"><button class="slot-choice" type="button">10:00 AM</button><button class="slot-choice selected" type="button">10:30 AM</button><button class="slot-choice" type="button">11:15 AM</button><button class="slot-choice" type="button">12:00 PM</button></div>
+<div class="booking-summary"><span>Consultation fee</span><strong>₹ — <small>Set by clinic</small></strong></div>
+<div class="demo-book-btn">Continue to booking <span>→</span></div>
+<p class="micro-note">Illustrative UI. Availability, payment, cancellation and refund rules would be configured for each clinic.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section-pad device-section" id="digital-register">
+<div class="container device-layout">
+<div class="section-copy device-copy">
+<span class="eyebrow">One secure workspace · Every device</span>
+<h2>Move the registers to a phone, tablet or computer.</h2>
+<p class="section-intro">Appointment books, patient histories, receipts and staff registers do not have to remain in separate notebooks. VaidyaLoop is being designed so authorised team members can find the information they need from a suitable device—at reception, in the consultation room or while checking operations elsewhere.</p>
+<div class="device-benefits">
+<div><span>✓</span><div><strong>Find instead of flip through pages</strong><p>Search a patient, visit, invoice or stock item by the information captured in the system.</p></div></div>
+<div><span>✓</span><div><strong>Keep the team in sync</strong><p>Reception, doctor and billing staff work from the same updated record with access controlled by their roles.</p></div></div>
+<div><span>✓</span><div><strong>Use the device that fits the task</strong><p>A phone for quick checks, a tablet at the bedside or in the room, and a computer for reports and detailed data entry.</p></div></div>
+</div>
+<p class="inline-note"><strong>Designed for practical access:</strong> secure access from anywhere requires an internet connection for cloud functions and appropriate staff permissions. Offline behaviour and device support must be confirmed during implementation.</p>
+<a class="btn btn-primary" href="#contact">Discuss digitising your registers <span aria-hidden="true">→</span></a>
+</div>
+<div aria-label="Illustrative VaidyaLoop interface on desktop, tablet and mobile" class="device-showcase">
+<div class="device-desktop">
+<div class="device-topbar"><span class="device-logo-dot">V</span><strong>Clinic workspace</strong><small>Overview · Illustrative</small></div>
+<div class="device-desktop-body"><aside><span class="side-active">Overview</span><span>Appointments</span><span>Patients</span><span>Billing</span><span>Staff</span></aside><div class="device-screen-main"><div class="device-greeting"><small>WEDNESDAY · CLINIC OVERVIEW</small><b>Your clinic at a glance</b></div><div class="device-kpis"><div><small>Patients today</small><strong>24</strong></div><div><small>Pending follow-ups</small><strong>06</strong></div><div><small>Receipts</small><strong>18</strong></div></div><div class="device-list-head"><b>Recent activity</b><small>Sample records</small></div><div class="device-list-row"><i></i><span><b>Appointment checked in</b><small>Patient record updated</small></span><em>Today</em></div><div class="device-list-row"><i></i><span><b>Receipt created</b><small>Consultation billing</small></span><em>Today</em></div><div class="device-list-row"><i></i><span><b>Follow-up reminder due</b><small>Review scheduled messages</small></span><em>Pending</em></div></div></div>
+</div>
+<div class="device-tablet"><div class="device-tablet-bar"><strong>Patient overview</strong><span>● Secure access concept</span></div><div class="device-tablet-patient"><span class="device-avatar">MK</span><div><b>Meera K., 58 F</b><small>Example patient · fictional data</small></div></div><div class="device-tablet-summary"><b>Patient brief <em>Review required</em></b><p>Last visit 12 Aug: knee pain, advised rest. Allergy recorded: <strong>Penicillin</strong>. 1 follow-up pending.</p><small>↳ Source notes one tap away</small></div></div>
+<div class="device-phone"><div class="phone-speaker"></div><div class="phone-screen"><div class="phone-greeting"><small>VAIDYALOOP</small><b>Today's clinic</b></div><div class="phone-kpi"><span>Appointments</span><strong>24</strong></div><div class="phone-row"><span class="phone-row-icon">✓</span><div><b>Reception queue</b><small>5 waiting</small></div><span>›</span></div><div class="phone-row"><span class="phone-row-icon mint">₹</span><div><b>Billing</b><small>Receipts and balances</small></div><span>›</span></div><div class="phone-row"><span class="phone-row-icon blue">▤</span><div><b>Staff attendance</b><small>Today's roster</small></div><span>›</span></div></div></div>
+<div class="device-caption"><span>Phone</span><span>Tablet</span><span>Computer</span></div>
+</div>
+</div>
+</section>
+<section class="section-pad section-white" id="walk-ins">
+<div class="container split-section reverse-mobile">
+<div class="queue-visual-wrap">
+<div class="queue-board">
+<div class="queue-board-head"><div><span class="mini-label">FRONT DESK VIEW</span><h3>Today's queue</h3></div><div class="queue-count"><strong>12</strong><small>checked in</small></div></div>
+<div class="queue-metrics"><div><span>Waiting</span><strong>05</strong></div><div><span>In consultation</span><strong>02</strong></div><div><span>Completed</span><strong>08</strong></div></div>
+<div class="queue-ticket ticket-emergency"><div class="ticket-number">E-01</div><div class="ticket-main"><strong>Emergency-marked</strong><small>Flag for immediate staff review</small></div><span class="ticket-label emergency-label">Urgent</span></div>
+<div class="queue-ticket ticket-priority"><div class="ticket-number">P-04</div><div class="ticket-main"><strong>Priority</strong><small>Clinic-defined priority rule</small></div><span class="ticket-label priority-label">Priority</span></div>
+<div class="queue-ticket"><div class="ticket-number">N-08</div><div class="ticket-main"><strong>Normal visit</strong><small>Walk-in · checked in 10:25</small></div><span class="ticket-label normal-label">Waiting</span></div>
+<div class="queue-ticket"><div class="ticket-number">N-09</div><div class="ticket-main"><strong>Normal visit</strong><small>Walk-in · checked in 10:31</small></div><span class="ticket-label normal-label">Waiting</span></div>
+<div class="queue-board-foot"><span class="status-dot"></span> Queue statuses can be updated by authorized staff</div>
+</div>
+<div class="queue-callout"><span class="callout-icon">↗</span><span><strong>One queue for arrivals</strong><small>Online bookings and walk-ins together</small></span></div>
+</div>
+<div class="section-copy">
+<span class="eyebrow">02 / Front desk operations</span>
+<h2>Walk-in patients need a clear process, too.</h2>
+<p class="section-intro">Online booking cannot replace the reality of a busy clinic. VaidyaLoop is planned to combine scheduled appointments and walk-ins in one queue, so the front desk can see who has arrived, who is waiting and which patient needs staff attention.</p>
+<div class="priority-explainer">
+<div class="priority-line"><span class="priority-dot dot-normal"></span><div><strong>Normal</strong><p>Routine visit placed in the regular token sequence.</p></div></div>
+<div class="priority-line"><span class="priority-dot dot-priority"></span><div><strong>Priority</strong><p>For clinic-defined cases such as a patient who needs an adjusted order. Staff must apply the clinic's policy.</p></div></div>
+<div class="priority-line"><span class="priority-dot dot-emergency"></span><div><strong>Emergency-marked</strong><p>Flags the front desk to alert qualified clinical staff immediately. A software token does not perform triage or replace emergency judgement.</p></div></div>
+</div>
+<p class="inline-note"><strong>Why it matters:</strong> fewer “Who is next?” interruptions, clearer waiting status and a record of how the queue moved through the day.</p>
+</div>
+</div>
+</section>
+<section class="section-pad ai-section" id="ai-history">
+<div class="container ai-layout">
+<div class="ai-copy">
+<span class="eyebrow eyebrow-light">03 / AI-assisted patient history</span>
+<h2>Know the history before the patient enters the room.</h2>
+<p class="ai-intro">Instead of opening several old prescriptions and notes one by one, a doctor can start with a concise summary of the information already recorded in the clinic system—then check the original entries as needed.</p>
+<div class="ai-benefit-grid">
+<div><span class="ai-check">✓</span><div><strong>Prepare faster</strong><p>Bring relevant previous visits, documented medicines and follow-ups into a brief view.</p></div></div>
+<div><span class="ai-check">✓</span><div><strong>Make room for conversation</strong><p>Spend less of the appointment searching for context and more time listening to the patient's current concern.</p></div></div>
+<div><span class="ai-check">✓</span><div><strong>Support continuity</strong><p>See what was recorded previously and what should be checked again, without assuming that older information is still current.</p></div></div>
+</div>
+<div class="ai-disclaimer"><span aria-hidden="true">ⓘ</span><p><strong>Clinician stays in control.</strong> AI summaries are a planned assistive feature, not a diagnosis. They must show their source context, flag missing information and be reviewed by the clinician. Accuracy and time saved must be validated before clinical use.</p></div>
+</div>
+<div class="patient-brief-card">
+<div class="patient-brief-header"><div><span class="mini-label">PATIENT OVERVIEW</span><h3>Meera K., 58 F <span class="sample-chip">Example</span></h3><p>Illustrative patient record · Fictional data</p></div><div class="patient-avatar">MK</div></div>
+<div class="patient-quick-facts"><div><small>Last visit</small><strong>12 Aug</strong></div><div><small>Recorded allergy</small><strong class="allergy-emphasis">Penicillin</strong></div><div><small>Follow-up</small><strong>1 pending</strong></div></div>
+<div aria-label="Patient overview tabs" class="brief-tabs" role="tablist">
+<button aria-selected="true" class="brief-tab active" data-brief="summary" role="tab" type="button">AI brief</button>
+<button aria-selected="false" class="brief-tab" data-brief="timeline" role="tab" type="button">Visit history</button>
+<button aria-selected="false" class="brief-tab" data-brief="medicines" role="tab" type="button">Recorded medicines</button>
+</div>
+<div aria-live="polite" class="brief-content" id="brief-content" role="tabpanel" tabindex="0">
+<div class="brief-heading"><span class="ai-spark">✳</span><div><strong>Patient brief <em class="review-required">Review required</em></strong><small>Generated from available record entries</small></div></div>
+<div class="patient-name-line"><strong>Meera K., 58 F</strong><span>Example patient · fictional data</span></div>
+<div class="summary-point"><span>01</span><p><strong>Last visit 12 Aug:</strong> knee pain; advised rest.</p></div>
+<div class="summary-point"><span>02</span><p><strong>Allergy recorded:</strong> <strong class="allergy-emphasis">Penicillin</strong>.</p></div>
+<div class="summary-point"><span>03</span><p><strong>1 follow-up pending.</strong> Confirm its status with the patient.</p></div>
+<button class="source-link source-link-action source-note-open" data-open-source-notes="" type="button"><span class="source-mark">↳</span> Source notes one tap away</button>
+</div>
+<details class="source-notes-details" id="notes-example"><summary>View example source note</summary><p>12 Aug consultation: knee pain documented; rest advised. Allergy field records Penicillin. Follow-up status: pending. This is fictional sample content, not a real medical record.</p></details>
+<div class="patient-brief-footer"><span><i aria-hidden="true" class="tiny-lock"></i> Access should follow clinic permissions</span><span>Concept preview</span></div>
+</div>
+</div>
+</section>
+<section class="section-pad section-soft" id="reminders">
+<div class="container split-section reminders-layout">
+<div class="section-copy">
+<span class="eyebrow">04 / Follow-up reminders</span>
+<h2>Help patients remember the next visit.</h2>
+<p class="section-intro">A follow-up is only useful if the patient remembers it and knows when to return. VaidyaLoop is planned to let staff record a follow-up date and send a reminder through the clinic's chosen communication channel.</p>
+<ul class="check-list large-checks">
+<li><span>✓</span> Reminders before scheduled visits</li>
+<li><span>✓</span> Clear appointment date, time and clinic details</li>
+<li><span>✓</span> Cancellation or rescheduling link where supported</li>
+<li><span>✓</span> A record of reminder status where the provider supports it</li>
+</ul>
+<p class="inline-note">Reminders can reduce forgetfulness, but delivery depends on the messaging provider, contact details and patient preferences. The clinic should control timing, consent and opt-out handling.</p>
+</div>
+<div class="reminder-visual">
+<div class="message-card message-back"><span class="msg-kicker">VaidyaLoop · Reminder preview</span><p>Your appointment at Green Valley Clinic is scheduled for tomorrow at 10:30 AM.</p><small>Sample message · Not sent</small></div>
+<div class="message-card message-front"><div class="message-app-head"><span class="message-avatar">V</span><div><strong>Clinic reminder</strong><small>Appointment notification</small></div><span class="message-time">10:05 AM</span></div><div class="message-bubble"><p>Hello, this is a reminder for your upcoming appointment.</p><div class="message-details"><span>Doctor</span><strong>Dr. A. Sharma</strong><span>Date and time</span><strong>15 Oct · 10:30 AM</strong><span>Location</span><strong>Green Valley Clinic</strong></div><p>Please contact the clinic if you need to reschedule.</p><small>Illustrative reminder only</small></div><div class="message-card-footer"><span>✓</span> Example notification flow</div></div>
+</div>
+</div>
+</section>
+<section class="section-pad section-white" id="operations">
+<div class="container">
+<div class="section-heading center-heading"><span class="eyebrow">05 / Business and clinic operations</span><h2>Know what is happening beyond the consultation room.</h2><p>Use daily records to make decisions about patient flow, money, stock and staffing. Reports are only as reliable as the information the clinic records.</p></div>
+<div class="operations-grid">
+<article class="operation-card reports-card"><div class="operation-icon icon-blue"><svg fill="none" viewbox="0 0 24 24"><path d="M4 19V5m0 14h17M7 15l4-4 3 2 5-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div><span class="operation-number">01</span><h3>Reports and performance</h3><p>Review how many patients were seen each day, appointments completed, repeat visits, cancellations and doctor-wise activity. Compare daily, monthly and yearly collections to understand operational patterns.</p><div aria-label="Illustrative patient volume chart" class="mini-chart"><div class="chart-legend"><span><i class="legend-dot teal-dot"></i>Patients seen</span><span>Illustrative</span></div><div class="bar-chart"><span style="--bar:44%"><i></i><small>M</small></span><span style="--bar:63%"><i></i><small>T</small></span><span style="--bar:52%"><i></i><small>W</small></span><span style="--bar:84%"><i></i><small>T</small></span><span style="--bar:70%"><i></i><small>F</small></span><span style="--bar:95%"><i></i><small>S</small></span><span style="--bar:36%"><i></i><small>S</small></span></div></div><ul class="mini-feature-list"><li>Daily, monthly and yearly views</li><li>Patient volume and revenue trends</li><li>Collections and outstanding amounts</li></ul></article>
+<article class="operation-card finance-card"><div class="operation-icon icon-green"><svg fill="none" viewbox="0 0 24 24"><rect height="14" rx="2" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="5"></rect><path d="M3 10h18m-13 5h3" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div><span class="operation-number">02</span><h3>Billing and receipts</h3><p>Generate an itemised bill for consultations, procedures, medicines and other configured services. Record cash, UPI and online payments, partial payments, refunds and balance due.</p><div class="receipt-demo"><div class="receipt-top"><strong>PAYMENT RECEIPT</strong><span>Sample</span></div><div class="receipt-line"><span>Consultation</span><b>₹ —</b></div><div class="receipt-line"><span>Medicines</span><b>₹ —</b></div><div class="receipt-line"><span>Other services</span><b>₹ —</b></div><div class="receipt-total"><span>Total payable</span><strong>Configured amount</strong></div><div class="receipt-stamp">Illustrative receipt</div></div><ul class="mini-feature-list"><li>Consistent billing and receipts</li><li>Track payments and refunds</li><li>Daily collection reconciliation</li></ul></article>
+<article class="operation-card pharmacy-card"><div class="operation-icon icon-orange"><svg fill="none" viewbox="0 0 24 24"><path d="M9 3h6v4H9zM7 7h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.7"></path><path d="M12 10v7m-3.5-3.5h7" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></div><span class="operation-number">03</span><h3>Pharmacy and inventory</h3><p>Track medicines by item, batch, expiry and available quantity. Link dispensing to the bill, record purchases and returns, and flag items that are running low or nearing expiry.</p><div class="stock-demo"><div class="stock-row"><span class="stock-pill stock-ok"></span><div><strong>Medicine A</strong><small>Stock level</small></div><span class="stock-level">In range</span></div><div class="stock-row"><span class="stock-pill stock-low"></span><div><strong>Medicine B</strong><small>Stock level</small></div><span class="stock-level low-text">Low stock</span></div><div class="stock-row"><span class="stock-pill stock-exp"></span><div><strong>Medicine C</strong><small>Expiry review</small></div><span class="stock-level exp-text">Check batch</span></div></div><ul class="mini-feature-list"><li>Purchase and dispensing records</li><li>Expiry and low-stock alerts</li><li>Stock movement and valuation</li></ul></article>
+<article class="operation-card staff-card"><div class="operation-icon icon-purple"><svg fill="none" viewbox="0 0 24 24"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.7"></circle><path d="M3.5 20v-1.5A4.5 4.5 0 0 1 8 14h2a4.5 4.5 0 0 1 4.5 4.5V20M16 5.5a3 3 0 0 1 0 5.8M17 14h.5a3.5 3.5 0 0 1 3.5 3.5V20" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></div><span class="operation-number">04</span><h3>Staff management</h3><p>Keep employee details, role, branch and contact information together. Record attendance, route leave requests to a manager and understand who is scheduled to work.</p><div class="staff-demo"><div class="staff-demo-head"><strong>Team overview</strong><span>Sample</span></div><div class="staff-avatars"><span>AS</span><span>RK</span><span>PM</span><span>+2</span></div><div class="staff-status-row"><span><i class="staff-status-dot present"></i>Present</span><strong>08</strong></div><div class="staff-status-row"><span><i class="staff-status-dot leave"></i>On leave</span><strong>01</strong></div><div class="staff-status-row"><span><i class="staff-status-dot pending"></i>Leave awaiting review</span><strong>02</strong></div></div><ul class="mini-feature-list"><li>Employee profiles and records</li><li>Attendance and leave workflow</li><li>Role-based access to information</li></ul></article>
+</div>
+</div>
+</section>
+<section class="section-pad roster-section" id="roster-planner">
+<div class="container roster-layout">
+<div class="section-copy roster-copy">
+<span class="eyebrow">AI-assisted staff planning</span>
+<h2>Plan duty rosters without rebuilding the schedule from scratch.</h2>
+<p class="section-intro">The proposed AI roster planner would prepare a draft from staff availability, approved leave, roles, required shift coverage and clinic rules. The manager can review gaps, resolve conflicts and approve the schedule instead of manually allocating every duty each time.</p>
+<div class="roster-benefit-list">
+<div><span>✓</span><div><strong>Consider availability and leave</strong><p>Use updated staff availability and approved leave to avoid assigning people who are unavailable.</p></div></div>
+<div><span>✓</span><div><strong>Check coverage and role requirements</strong><p>Flag shifts that lack the required role or have more people assigned than needed.</p></div></div>
+<div><span>✓</span><div><strong>Keep the manager in control</strong><p>AI proposes a draft; an authorised manager reviews and approves it. Changes remain traceable.</p></div></div>
+</div>
+<p class="inline-note"><strong>Important:</strong> the planner is an upcoming concept. Final scheduling rules, applicable working-hour policies and approvals must be configured with the facility.</p>
+</div>
+<div class="roster-demo-card">
+<div class="roster-demo-head"><div><span class="mini-label">DUTY ROSTER PLANNER</span><h3>Weekly staff plan</h3><p>Illustrative schedule · Draft for review</p></div><span class="roster-status">Draft</span></div>
+<div class="roster-filters"><span>Week view</span><span>All departments</span><span>3 roles</span></div>
+<div class="roster-table-wrap"><table class="roster-table"><thead><tr><th>Team member</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr></thead><tbody><tr><td><b>R. Verma</b><small>Nursing</small></td><td><i class="shift-day">M</i></td><td><i class="shift-day">M</i></td><td><i class="shift-off">Off</i></td><td><i class="shift-day">M</i></td><td><i class="shift-day">M</i></td></tr><tr><td><b>P. Mishra</b><small>Reception</small></td><td><i class="shift-day">D</i></td><td><i class="shift-day">D</i></td><td><i class="shift-day">D</i></td><td><i class="shift-off">Off</i></td><td><i class="shift-day">D</i></td></tr><tr><td><b>A. Khan</b><small>Pharmacy</small></td><td><i class="shift-day">D</i></td><td><i class="shift-off">Off</i></td><td><i class="shift-day">D</i></td><td><i class="shift-day">D</i></td><td><i class="shift-day">D</i></td></tr></tbody></table></div>
+<div class="roster-draft-check"><span class="roster-check-icon">✳</span><div><strong>Suggested checks before approval</strong><p>Confirm coverage on Tuesday, verify approved leave and review any shift-hour rules.</p></div></div>
+<button aria-controls="roster-rule-detail" aria-expanded="false" class="roster-explain-toggle" type="button">See what the planner considers <span aria-hidden="true">＋</span></button>
+<div class="roster-rule-detail" hidden="" id="roster-rule-detail"><ul><li>Staff roles and required coverage</li><li>Availability and approved leave</li><li>Configured shift hours and rest rules</li><li>Fair distribution of duties where possible</li><li>Manager overrides and approval history</li></ul></div>
+<div class="roster-demo-foot"><span>AI-assisted draft · Manager approval required</span><span>Concept preview</span></div>
+</div>
+</div>
+</section>
+<section class="section-pad accounting-section" id="accounting">
+<div class="container accounting-layout">
+<div class="section-copy"><span class="eyebrow">06 / Financial clarity</span><h2>Connect bills, pharmacy, expenses and collections.</h2><p class="section-intro">An end-to-end accounting layer is planned to help owners understand where money came from, where it went and which amounts still need attention. It should build from recorded transactions—not replace professional accounting advice.</p><div class="accounting-points"><div><span class="number-check">01</span><div><strong>Revenue and payment records</strong><p>Consultation charges, procedures, pharmacy sales, refunds and payment mode.</p></div></div><div><span class="number-check">02</span><div><strong>Expenses and suppliers</strong><p>Record expense categories, supplier purchases, payables and supporting documents.</p></div></div><div><span class="number-check">03</span><div><strong>Pharmacy revenue visibility</strong><p>Compare medicines prescribed with medicines dispensed and sold through the clinic pharmacy where both records exist. This can flag possible outside purchases, but cannot prove a lost sale by itself.</p></div></div><div><span class="number-check">04</span><div><strong>Reconciliation and exports</strong><p>Compare recorded payments with gateway/bank settlements and export reports for the accountant.</p></div></div></div></div>
+<div class="accounting-visual"><div class="accounts-window"><div class="accounts-header"><div><span class="mini-label">OWNER'S SUMMARY</span><h3>Financial overview</h3></div><span class="period-selector">This month ▾</span></div><div class="accounts-kpis"><div><small>Recorded revenue</small><strong>₹ —</strong><span>Based on entries</span></div><div><small>Recorded expenses</small><strong>₹ —</strong><span>Based on entries</span></div></div><div class="income-expense-chart"><div class="chart-caption"><strong>Income and expenses</strong><small>Illustrative view</small></div><div class="chart-grid-lines"><i></i><i></i><i></i><i></i></div><svg aria-label="Illustrative income and expense trend" class="line-chart" role="img" viewbox="0 0 330 120"><path d="M7 92 C35 85 42 58 68 65 S105 83 130 43 S170 62 194 36 S236 44 255 25 S300 31 323 12" fill="none" stroke="#238f82" stroke-linecap="round" stroke-width="3"></path><path d="M7 103 C36 97 43 89 68 91 S105 74 130 82 S167 69 194 77 S235 64 255 72 S299 57 323 62" fill="none" stroke="#e5ad54" stroke-dasharray="5 5" stroke-linecap="round" stroke-width="2.5"></path></svg><div class="chart-key"><span><i class="legend-dot teal-dot"></i>Revenue</span><span><i class="legend-dot gold-dot"></i>Expenses</span></div></div><div class="accounts-footer"><span><i aria-hidden="true" class="tiny-lock"></i> Actual reports depend on complete entries</span><span>Concept preview</span></div></div><div class="accounting-callout"><span class="callout-icon gold-callout">₹</span><div><strong>Find the questions worth investigating</strong><small>Unpaid bills · unusual stock movement · unrecorded expenses</small></div></div></div>
+</div>
+</section>
+<section class="section-pad section-white" id="roadmap">
+<div class="container">
+<div class="section-heading center-heading"><span class="eyebrow">Product roadmap</span><h2>Start with the clinic. Extend when you're ready.</h2><p>These are planned capabilities. Availability depends on product development, validation and implementation requirements.</p></div>
+<div class="roadmap-grid">
+<article class="roadmap-card roadmap-now"><div class="roadmap-label"><span></span> Initial focus</div><h3>Outpatient operations</h3><p>Appointments, walk-in tokens, doctor schedule, patient history, AI-assisted visit summaries, reminders, billing, pharmacy, staff and operational reports.</p><div class="roadmap-foot">Designed for an incremental rollout</div></article>
+<article class="roadmap-card"><div class="roadmap-label planned-label"><span></span> Upcoming</div><h3>In-patient journey and beds</h3><p>Bed/ward availability, admission, transfer, daily doctor rounds, nursing tasks, treatment notes and discharge coordination—connected to the patient's record.</p><div class="roadmap-foot">Planned · Not represented as available today</div></article>
+<article class="roadmap-card"><div class="roadmap-label planned-label"><span></span> Upcoming</div><h3>Critical resource monitoring</h3><p>Review workflows for oxygen inventory or capacity, blood-bank stock/expiry and critical alerts. Real-time monitoring would require validated processes, integrations and human escalation.</p><div class="roadmap-foot">Planned · Not a replacement for clinical monitoring</div></article>
+<article class="roadmap-card"><div class="roadmap-label planned-label"><span></span> Upcoming</div><h3>Queries and end-to-end accounts</h3><p>Track patient or staff queries from creation through assignment and resolution. Expand accounting to expenses, suppliers, reconciliation, ledgers and accountant-ready exports.</p><div class="roadmap-foot">Planned · Scope to be defined with users</div></article>
+</div>
+<div class="rounds-feature"><div class="rounds-icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h8M8 13h5M8 16h3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></svg></div><div class="rounds-copy"><span class="eyebrow">Planned inpatient workflow</span><h3>Doctor rounds, captured at the bedside.</h3><p>On a doctor's phone or tablet, a future rounds view could show assigned in-patients, the day's visit list, latest observations entered by the care team, notes from each round, orders to review and pending tasks. A timestamped daily report would be available after the rounds are recorded.</p></div><div class="rounds-points"><span>Patient list</span><span>Round notes</span><span>Pending tasks</span><span>Daily report</span></div></div>
+</div>
+</section>
+<section class="section-pad tailor-section" id="tailored">
+<div class="container tailor-layout"><div><span class="eyebrow">Built around your requirements</span><h2>Your clinic has its own way of working. The setup should reflect that.</h2><p>Choose which workflows matter most, identify the reports you use and agree on role access before rollout. VaidyaLoop is intended to be configured around practical clinic needs rather than forcing every facility into one fixed process.</p></div><div class="tailor-checks"><div><span>✓</span> Clinic-specific fees and services</div><div><span>✓</span> Doctor schedules and appointment rules</div><div><span>✓</span> Staff roles and branch access</div><div><span>✓</span> Reports relevant to the owner</div><div><span>✓</span> A staged plan for later modules</div><a class="text-link" href="#contact">Discuss a tailored setup <span aria-hidden="true">→</span></a></div></div>
+</section>
+<section class="section-pad faq-section" id="faq">
+<div class="container faq-layout"><div class="section-heading"><span class="eyebrow">Questions worth answering</span><h2>Before you choose a clinic system.</h2><p>Clear answers about rollout, payments, AI and future scope.</p></div><div class="faq-list">
+<details class="faq-item"><summary>Is VaidyaLoop available to use today?</summary><p>This page presents the proposed product and planned capabilities. Availability, supported integrations, pricing and implementation timelines must be confirmed before a clinic signs up.</p></details>
+<details class="faq-item"><summary>Can patients book online and still walk in?</summary><p>The intended workflow combines online bookings, phone bookings and walk-ins in one clinic queue. The clinic's own scheduling rules would determine slot availability and token handling.</p></details>
+<details class="faq-item"><summary>Can AI replace the doctor's review of previous prescriptions?</summary><p>No. The intended AI summary is an assistive overview of records already available in the system. The doctor must review relevant source information and use professional judgement.</p></details>
+<details class="faq-item"><summary>Can the system show revenue lost because a patient bought medicine outside?</summary><p>It can potentially flag differences between prescriptions and pharmacy dispensing/sales records where those records are captured. It cannot know every outside purchase automatically, so the report should be presented as an estimate or follow-up opportunity—not confirmed lost revenue.</p></details>
+<details class="faq-item"><summary>Will bed, oxygen and blood-bank management be included?</summary><p>These are planned future areas, not presented as current capabilities. Each requires detailed workflows, safety reviews and, where needed, validated integrations and escalation procedures.</p></details>
+<details class="faq-item"><summary>Can the product be configured for our clinic?</summary><p>The goal is to configure fees, schedules, services, roles and useful reports around the clinic's needs. The feasible setup and any custom work should be agreed during discovery.</p></details>
+</div></div>
+</section>
+<section class="section-pad why-section" id="why-vaidhyaloop">
+<div class="container">
+<div class="section-heading center-heading"><span class="eyebrow">Why consider VaidyaLoop?</span><h2>Choose the system around the work you need to manage.</h2><p>The value is not just storing information digitally. It is making the information easier to find, act on and review.</p></div>
+<div class="why-grid">
+<article class="why-card clinic-why"><div class="why-card-top"><span class="why-icon">✚</span><div><span class="why-kicker">FOR CLINICS</span><h3>Make everyday clinic work simpler.</h3></div></div><ul><li>Offer an online clinic page and let patients book at a time that suits them.</li><li>Choose whether advance payment is required, optional or unavailable for appointments.</li><li>Handle online appointments, phone bookings and walk-ins from one queue.</li><li>Review a patient timeline and AI-assisted history brief before the consultation.</li><li>Record consultations, prescriptions, bills, receipts and follow-up reminders together.</li><li>Check staff attendance, leave, pharmacy stock and daily collections without switching between separate registers.</li><li>Use a phone, tablet or computer with role-appropriate access.</li></ul><a class="text-link" href="#contact">Discuss a clinic setup <span aria-hidden="true">→</span></a></article>
+<article class="why-card hospital-why"><div class="why-card-top"><span class="why-icon">▦</span><div><span class="why-kicker">FOR SMALL HOSPITALS</span><h3>Build a digital foundation that can grow.</h3></div></div><ul><li>Start with OPD scheduling, patient records, billing, pharmacy and staff operations.</li><li>Keep patient, visit and financial records organised across authorised departments.</li><li>Track collections, expenses, stock movement and outstanding balances more clearly.</li><li>Prepare for future inpatient admissions, bed management, doctor rounds and nursing workflows.</li><li>Plan critical-resource workflows for oxygen and blood-bank monitoring with clear alerts and escalation.</li><li>Expand toward end-to-end accounts and supplier/payable management as requirements are defined.</li><li>Agree a phased rollout rather than introducing every department in one step.</li></ul><a class="text-link" href="#roadmap">Review the upcoming roadmap <span aria-hidden="true">→</span></a></article>
+</div>
+<div class="why-footnote">Upcoming hospital workflows are planned capabilities, not represented as available today. Scope, safety requirements and integrations must be confirmed before implementation.</div>
+</div>
+</section>
+<section class="section-pad contact-section" id="contact">
+<div class="container contact-layout">
+<div class="contact-copy"><span class="eyebrow eyebrow-light">Let's discuss your workflow</span><h2>Show us how your clinic works today.</h2><p>Share the type of clinic you manage and the tasks you want to simplify. We can discuss the current concept, learn your requirements and decide whether a walkthrough is useful.</p><div class="contact-person-card"><div class="contact-person-avatar">SA</div><div><small>Contact person</small><strong>Mr. Shashank Awasthi</strong><a href="tel:+916306028342">+91 6306028342</a></div><a aria-label="Call Mr. Shashank Awasthi" class="phone-circle" href="tel:+916306028342"><svg fill="none" viewbox="0 0 24 24"><path d="M5 4h3l2 5-2 1.5a14 14 0 0 0 5.5 5.5L15 14l5 2v3c0 1-1 1-2 1C10 19 5 14 4 6c0-1 0-2 1-2Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path></svg></a></div><div class="contact-assurance"><span>✓</span> No patient records are needed to start the conversation. Please do not submit sensitive medical information through this form.</div></div>
+<form class="contact-form" id="demo-form">
+<div class="form-heading"><span>REQUEST A WALKTHROUGH</span><h3>Tell us a little about your clinic.</h3><p>Required fields are marked with an asterisk.</p></div>
+<div class="form-row"><label for="name">Your name <span>*</span><input autocomplete="name" id="name" maxlength="80" name="name" placeholder="e.g. Dr. Anil Sharma" required="" type="text"/></label><label for="role">Your role <span>*</span><select id="role" name="role" required=""><option value="">Select role</option><option>Doctor / Clinic owner</option><option>Hospital administrator</option><option>Reception / Operations</option><option>Other</option></select></label></div>
+<label for="clinic">Clinic / hospital name <span>*</span><input autocomplete="organization" id="clinic" maxlength="120" name="clinic" placeholder="Name of your clinic" required="" type="text"/></label>
+<div class="form-row"><label for="city">City / town <span>*</span><input autocomplete="address-level2" id="city" maxlength="80" name="city" placeholder="Your city or town" required="" type="text"/></label><label for="size">Clinic size <span>*</span><select id="size" name="size" required=""><option value="">Choose size</option><option>Solo doctor</option><option>2–5 doctors</option><option>6–10 doctors</option><option>Small hospital</option><option>Other</option></select></label></div>
+<label for="interest">What would you most like to improve? <span>*</span><select id="interest" name="interest" required=""><option value="">Choose a priority</option><option>Online appointments and queue</option><option>Patient history and AI summary</option><option>Billing, reports and accounting</option><option>Pharmacy and inventory</option><option>Staff management</option><option>In-patient and hospital workflows</option><option>Need help identifying the right fit</option></select></label>
+<label for="notes">Anything else to discuss? <small>(Optional)</small><textarea id="notes" maxlength="700" name="notes" placeholder="Describe the workflow you'd like to improve. Please do not include patient-identifiable or medical information." rows="3"></textarea></label>
+<button class="btn btn-primary form-submit" type="submit">Continue on WhatsApp <span aria-hidden="true">→</span></button>
+<p class="form-footnote">This opens WhatsApp with your message prefilled to <strong>+91 6306028342</strong>. Nothing is sent until you review and send the message in WhatsApp.</p>
+<p aria-live="polite" class="form-status" id="form-status" role="status"></p>
+</form>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-top"><a aria-label="VaidyaLoop home" class="brand footer-brand" href="#top"><span aria-hidden="true" class="brand-mark"><svg fill="none" viewbox="0 0 40 40"><path d="M12 8.5h9.2a9 9 0 0 1 0 18H17a6 6 0 0 1 0-12h7" stroke="currentColor" stroke-linecap="round" stroke-width="3.1"></path><path d="M28 31.5h-9.2a9 9 0 0 1 0-18H23a6 6 0 0 1 0 12h-7" stroke="currentColor" stroke-linecap="round" stroke-width="3.1"></path></svg></span><span class="brand-name">Vaidya<span>Loop</span></span></a><p>A proposed clinic and hospital operations platform focused on clarity, continuity and practical workflows.</p><a class="footer-phone" href="tel:+916306028342">+91 6306028342</a></div>
+<div class="container footer-bottom"><span>© <span id="year">2026</span> VaidyaLoop. Product concept; capabilities and availability are subject to validation and development.</span><div><a href="#platform">Platform</a><a href="#roadmap">Roadmap</a><a href="#contact">Contact</a></div></div>
+</footer>
+<a class="mobile-sticky-cta" href="#contact">Discuss your clinic <span aria-hidden="true">→</span></a>
 </body>
 </html>

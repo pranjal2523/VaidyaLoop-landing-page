@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html lang="hi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#f7faf9" name="theme-color"/>
+<meta content="VaidyaLoop: क्लिनिक और अस्पताल के लिए अपॉइंटमेंट, मरीज की हिस्ट्री, AI सार, बिलिंग, फार्मेसी, स्टाफ और रिपोर्ट एक जगह।" name="description"/>
+<title>VaidyaLoop — क्लिनिक का काम, अब एक जगह</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<script defer="" src="script-hi.js"></script>
+<link href="styles-hi.css" rel="stylesheet"/><link href="index.html" hreflang="en" rel="alternate"/></head>
+<body>
+<a class="skip-link" href="#main">मुख्य सामग्री पर जाएँ</a>
+<header class="site-header" id="top">
+<div class="container nav-wrap">
+<a aria-label="VaidyaLoop मुख्य पेज" class="brand" href="#top">
+<span aria-hidden="true" class="brand-mark">
+<svg fill="none" viewbox="0 0 40 40"><path d="M12 8.5h9.2a9 9 0 0 1 0 18H17a6 6 0 0 1 0-12h7" stroke="currentColor" stroke-linecap="round" stroke-width="3.1"></path><path d="M28 31.5h-9.2a9 9 0 0 1 0-18H23a6 6 0 0 1 0 12h-7" stroke="currentColor" stroke-linecap="round" stroke-width="3.1"></path></svg>
+</span>
+<span class="brand-name">Vaidya<span>Loop</span></span>
+</a>
+<button aria-controls="primary-nav" aria-expanded="false" aria-label="मेन्यू खोलें" class="menu-toggle" type="button">
+<span></span><span></span><span></span>
+</button>
+<nav aria-label="मुख्य मेन्यू" class="primary-nav" id="primary-nav">
+<a href="#platform">सुविधाएँ</a>
+<a href="#ai-history">AI से मरीज की हिस्ट्री</a>
+<a href="#operations">क्लिनिक का काम</a>
+<a href="#roster-planner">AI ड्यूटी प्लान</a>
+<a href="#roadmap">आगे आने वाली सुविधाएँ</a>
+<a class="nav-cta" href="#contact">डेमो की बात करें <span aria-hidden="true">↗</span></a>
+<a aria-label="अंग्रेज़ी संस्करण देखें" class="language-switch" href="index.html" lang="en">English</a></nav>
+</div>
+</header>
+<main id="main">
+<section class="hero section-pad">
+<div class="container hero-grid">
+<div class="hero-copy">
+<div class="eyebrow"><span class="eyebrow-dot"></span> क्लिनिक और अस्पताल के काम, एक जगह</div>
+<h1>रिकॉर्ड ढूँढने में कम समय।<br/><span>मरीजों के लिए ज़्यादा समय।</span></h1>
+<p class="hero-lead">VaidyaLoop का लक्ष्य है अपॉइंटमेंट, मरीज की हिस्ट्री, बिलिंग, फार्मेसी और स्टाफ का काम एक आसान सिस्टम में लाना। छोटे क्लिनिक और बढ़ते अस्पतालों के लिए।</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#contact">अपने क्लिनिक की ज़रूरत बताएं <span aria-hidden="true">→</span></a>
+<a class="btn btn-secondary" href="#platform">सुविधाएँ देखें</a>
+</div>
+<div class="hero-note"><span aria-hidden="true" class="note-icon">✓</span><span>क्लिनिक के रोज़ के काम को ध्यान में रखकर बनाया जा रहा है। शुरुआत OPD से, फिर ज़रूरत के अनुसार अस्पताल की सुविधाएँ।</span></div>
+<div aria-label="सिस्टम की मुख्य सुविधाएँ" class="hero-tags">
+<span>क्लिनिक की ऑनलाइन पहचान</span><span>मरीज के डिजिटल रिकॉर्ड</span><span>AI से मरीज का सार</span><span>AI से ड्यूटी प्लान</span><span>बिलिंग, फार्मेसी और हिसाब</span>
+</div>
+</div>
+<div aria-label="VaidyaLoop डैशबोर्ड का उदाहरण" class="hero-visual">
+<div class="visual-glow"></div>
+<div class="dashboard-card">
+<div class="dash-top">
+<div><span class="dash-kicker">क्लिनिक की जानकारी</span><h2>आज का क्लिनिक</h2></div>
+<div class="date-pill"><span class="status-dot"></span> डिज़ाइन का उदाहरण</div>
+</div>
+<div class="stat-grid">
+<div class="stat-box"><span>अपॉइंटमेंट</span><strong>24</strong><small class="positive">8 फॉलो-अप</small></div>
+<div class="stat-box"><span>आ चुके मरीज</span><strong>11</strong><small>अगला टोकन · 12</small></div>
+<div class="stat-box"><span>कुल जमा</span><strong>₹18.4k</strong><small>आज दर्ज</small></div>
+</div>
+<div class="dash-section-head"><h3>कतार में अगले मरीज</h3><span class="muted-small">उदाहरण के लिए डेटा</span></div>
+<div class="queue-list">
+<div class="queue-row"><span class="queue-token">08</span><div class="queue-person"><strong>मीरा K.</strong><small>फॉलो-अप · सुबह 10:30</small></div><span class="queue-status status-ready">तैयार</span></div>
+<div class="queue-row"><span class="queue-token priority-token">09</span><div class="queue-person"><strong>अर्जुन S.</strong><small>प्राथमिकता · सुबह 10:35</small></div><span class="queue-status status-wait">इंतज़ार</span></div>
+</div>
+<div class="ai-preview">
+<div aria-hidden="true" class="ai-preview-icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1" stroke="currentColor" stroke-linecap="round" stroke-width="1.6"></path><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.6"></circle></svg></div>
+<div><div class="ai-title">AI से मरीज का सार <span>कॉन्सेप्ट का उदाहरण</span></div><p>पिछली विज़िट, दर्ज दवाइयाँ और बाकी फॉलो-अप का छोटा सार—डॉक्टर जाँच सकते हैं।</p></div>
+</div>
+<div class="dash-footer"><span><i aria-hidden="true" class="tiny-lock"></i> एक्सेस काम के अनुसार मिले</span><span>VaidyaLoop का प्रस्तावित रूप</span></div>
+</div>
+<div class="floating-note note-appointments"><span class="floating-icon">↗</span><div><strong>सभी अपॉइंटमेंट एक जगह</strong><small>ऑनलाइन + सीधे आए मरीज</small></div></div>
+<div class="floating-note note-history"><span class="floating-icon mint-icon">◎</span><div><strong>मरीज की पिछली जानकारी</strong><small>मुलाकात शुरू होने से पहले</small></div></div>
+</div>
+</div>
+</section>
+<section aria-label="सिस्टम के मुख्य सिद्धांत" class="proof-strip">
+<div class="container proof-items">
+<div><span class="proof-symbol">01</span><span><strong>रोज़ के काम के लिए</strong><small>रिसेप्शन से डॉक्टर तक</small></span></div>
+<div><span class="proof-symbol">02</span><span><strong>एक जुड़ा हुआ सिस्टम</strong><small>बार-बार ऐप बदलने की ज़रूरत कम</small></span></div>
+<div><span class="proof-symbol">03</span><span><strong>आगे बढ़ाया जा सकता है</strong><small>पहले क्लिनिक, फिर अस्पताल</small></span></div>
+</div>
+</section>
+<section class="section-pad value-overview" id="benefits">
+<div class="container">
+<div class="section-heading center-heading">
+<span class="eyebrow">सिर्फ अपॉइंटमेंट नहीं</span>
+<h2>क्लिनिक का रोज़ का काम डिजिटल करें।</h2>
+<p>VaidyaLoop का उद्देश्य मरीज की पहली ऑनलाइन बुकिंग से लेकर डॉक्टर के नोट्स, फार्मेसी बिल और मालिक की रोज़ की रिपोर्ट तक काम को एक जगह जोड़ना है।</p>
+</div>
+<div class="value-grid">
+<article class="value-card value-featured"><span class="value-icon">↗</span><h3>आपका क्लिनिक ऑनलाइन दिखे</h3><p>मरीज आपके क्लिनिक का अलग पेज खोलकर समय देख सकते हैं और अपॉइंटमेंट बुक कर सकते हैं। आप चाहें तो पहले भुगतान भी रख सकते हैं। इससे आख़िरी समय पर न आने की संभावना कम हो सकती है, लेकिन पूरी तरह खत्म नहीं होती।</p><span class="value-proof">ऑनलाइन पेज · बुकिंग · चाहें तो पहले भुगतान</span></article>
+<article class="value-card"><span class="value-icon">▤</span><h3>अलग-अलग रजिस्टरों की जगह एक सिस्टम</h3><p>अपॉइंटमेंट, मरीज की हिस्ट्री, रसीद, स्टाफ की हाज़िरी और स्टॉक का रिकॉर्ड डिजिटल रखें। कई रजिस्टर पलटने के बजाय जानकारी खोजें।</p><span class="value-proof">मोबाइल · टैबलेट · कंप्यूटर</span></article>
+<article class="value-card"><span class="value-icon">✳</span><h3>मरीज और स्टाफ के काम में AI की मदद</h3><p>प्रस्तावित AI सुविधा उपलब्ध मरीज रिकॉर्ड का सार बना सकती है और स्टाफ की ड्यूटी का ड्राफ्ट दे सकती है। इससे बार-बार रिकॉर्ड खोजना और ड्यूटी बाँटना कम हो सकता है।</p><span class="value-proof">अंतिम जाँच इंसान करेगा</span></article>
+<article class="value-card"><span class="value-icon">₹</span><h3>क्लिनिक के हिसाब पर नज़र रखें</h3><p>बिलिंग, फार्मेसी की बिक्री, खर्च, स्टॉक और रोज़/महीने/साल की रिपोर्ट एक जगह देखें। इससे फैसले लेना आसान हो सकता है।</p><span class="value-proof">रिकॉर्ड मिलाकर जाँचें</span></article>
+<article class="value-card"><span class="value-icon">◎</span><h3>अपने शहर में डिजिटल पहचान बनाएं</h3><p>मरीजों को आपके क्लिनिक की जानकारी और ऑनलाइन अपॉइंटमेंट की सुविधा दें। अपने शहर में डिजिटल बुकिंग अपनाने वाले शुरुआती क्लिनिकों में शामिल हों।</p><span class="value-proof">शेयर करने योग्य क्लिनिक पेज · मोबाइल पर आसान बुकिंग</span></article>
+<article class="value-card"><span class="value-icon">↗</span><h3>शुरू से आगे के लिए तैयार</h3><p>OPD और रोज़ के काम से शुरुआत करें। ज़रूरत बढ़ने पर भर्ती मरीज, बेड मैनेजमेंट, डॉक्टर राउंड और विस्तृत हिसाब जोड़ने की योजना बनाएं।</p><span class="value-proof">ज़रूरी काम से शुरुआत · धीरे-धीरे विस्तार</span></article>
+</div>
+<div class="founding-clinic-banner">
+<div class="founding-badge">पहले 100 ग्राहकों के लिए विशेष कार्यक्रम</div>
+<div class="founding-copy"><h3>पहले 100 क्लिनिक और अस्पतालों के लिए: सिस्टम आपके काम के अनुसार</h3><p>पहले 100 जुड़ने वाले क्लिनिक और अस्पताल अपनी ज़रूरत बताएं—रजिस्टर, कतार, फॉर्म, मंज़ूरी या रिपोर्ट। हम आपकी टीम के साथ मिलकर चुने हुए काम का आसान डिजिटल तरीका तैयार करने की कोशिश करेंगे। काम की सीमा और समय पहले तय होंगे।</p></div>
+<div class="founding-action"><a class="btn btn-primary" href="#contact">अपनी ज़रूरत के अनुसार सेटअप तय करें <span aria-hidden="true">→</span></a><small>काम और समय पहले चर्चा करके तय होंगे।</small></div>
+</div>
+<div class="support-highlight"><div aria-hidden="true" class="support-icon">24/7</div><div><strong>ट्रेनिंग और मदद, क्लिनिक के काम को ध्यान में रखकर।</strong><p>क्लिनिक का काम रुकना नहीं चाहिए। इसलिए हमारा प्रस्ताव है कि शुरुआत में ट्रेनिंग मिले और ज़रूरत पड़ने पर मदद का रास्ता साफ हो। लॉन्च से पहले सहायता का समय और जवाब देने की शर्तें लिखित में तय की जाएँगी।</p></div></div>
+</div>
+</section>
+<section class="section-pad section-white" id="platform">
+<div class="container">
+<div class="section-heading center-heading">
+<span class="eyebrow">सिस्टम की सुविधाएँ</span>
+<h2>रोज़ के ज़रूरी काम, एक ही क्रम में।</h2>
+<p>हर सुविधा का मकसद है बार-बार का काम कम करना, जानकारी जल्दी ढूँढना और टीम को सही अगला कदम लेने में मदद देना।</p>
+</div>
+<div class="interactive-platform">
+<div aria-label="सिस्टम के अलग दृश्य देखें" class="platform-tabs" role="tablist">
+<button aria-controls="platform-panel" aria-selected="true" class="platform-tab active" data-view="flow" id="tab-flow" role="tab">क्लिनिक का दिन</button>
+<button aria-controls="platform-panel" aria-selected="false" class="platform-tab" data-view="patient" id="tab-patient" role="tab">मरीज की जानकारी</button>
+<button aria-controls="platform-panel" aria-selected="false" class="platform-tab" data-view="revenue" id="tab-revenue" role="tab">बिज़नेस रिपोर्ट</button>
+</div>
+<div aria-labelledby="tab-flow" class="platform-panel" id="platform-panel" role="tabpanel" tabindex="0">
+<div class="platform-panel-copy">
+<span class="panel-label" id="panel-label">क्लिनिक का पूरा दिन एक जगह</span>
+<h3 id="panel-title">मरीज के आने से रसीद तक, रिकॉर्ड साथ-साथ।</h3>
+<p id="panel-description">ऑनलाइन बुकिंग, फोन पर बुकिंग और सीधे आए मरीज एक ही सूची में दिखें। स्टाफ टोकन दे सके और मरीज की स्थिति अपडेट कर सके।</p>
+<ul class="check-list" id="panel-list">
+<li><span>✓</span> आज के सभी अपॉइंटमेंट एक जगह देखें</li>
+<li><span>✓</span> सामान्य, प्राथमिकता और आपात स्थिति वाले मरीज पहचानें</li>
+<li><span>✓</span> डॉक्टर की मुलाकात और बिलिंग तक रिकॉर्ड साथ रहे</li>
+</ul>
+<a class="text-link" href="#contact">अपने काम के बारे में बात करें <span aria-hidden="true">→</span></a>
+</div>
+<div class="panel-visual" id="panel-visual">
+<div class="mini-window">
+<div class="mini-window-bar"><span></span><span></span><span></span><strong>अपॉइंटमेंट</strong><small>आज</small></div>
+<div class="mini-toolbar"><span>कुल विज़िट <b>24</b></span><span>इंतज़ार <b>5</b></span><span>पूरे हुए <b>8</b></span></div>
+<div class="mini-table-head"><span>मरीज / टोकन</span><span>प्रकार</span><span>स्थिति</span></div>
+<div class="mini-table-row"><span><b>टोकन 08</b><small>मीरा K.</small></span><em class="tag-normal">सामान्य</em><span class="mini-status">इंतज़ार</span></div>
+<div class="mini-table-row"><span><b>टोकन 09</b><small>अर्जुन S.</small></span><em class="tag-priority">प्राथमिकता</em><span class="mini-status">आ चुके मरीज</span></div>
+<div class="mini-table-row"><span><b>टोकन 10</b><small>R. Khan</small></span><em class="tag-online">ऑनलाइन</em><span class="mini-status">पुष्टि हुई</span></div>
+<div class="mini-table-row"><span><b>टोकन 11</b><small>P. Joshi</small></span><em class="tag-normal">सामान्य</em><span class="mini-status">बुक हुआ</span></div>
+<div class="mini-window-foot"><span class="tiny-check">✓</span> स्क्रीन का उदाहरण · असली मरीज का डेटा नहीं</div>
+</div>
+</div>
+</div>
+<p class="interaction-hint"><span aria-hidden="true">↳</span> ऊपर दूसरा टैब चुनकर देखें कि यही सिस्टम डॉक्टर की मुलाकात और क्लिनिक के फैसलों में कैसे मदद कर सकता है।</p>
+</div>
+</div>
+</section>
+<section class="section-pad section-soft" id="appointments">
+<div class="container split-section">
+<div class="section-copy">
+<span class="eyebrow">01 / मरीज की सुविधा</span>
+<h2>मरीज क्लिनिक खोजें और बुक करें—रिसेप्शन का काम बढ़ाए बिना।</h2>
+<p class="section-intro">क्लिनिक के अपने ऑनलाइन पेज पर मरीज डॉक्टर का समय देख सकते हैं और सुविधाजनक समय चुन सकते हैं। शेड्यूल का नियंत्रण क्लिनिक के पास रहेगा।</p>
+<div class="benefit-list">
+<article class="benefit-item"><span class="benefit-icon"><svg fill="none" viewbox="0 0 24 24"><rect height="16" rx="2" stroke="currentColor" stroke-width="1.7" width="18" x="3" y="5"></rect><path d="M7 3v4m10-4v4M3 10h18M8 14h3m-3 3h6" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span><div><h3>समय पूछने के लिए बार-बार फोन कम</h3><p>क्लिनिक का समय, डॉक्टर की जानकारी, फीस और खाली स्लॉट एक जगह दिखें। फोन और सीधे आए मरीजों की बुकिंग भी इसी कैलेंडर में दर्ज हो सकती है।</p></div></article>
+<article class="benefit-item"><span class="benefit-icon"><svg fill="none" viewbox="0 0 24 24"><rect height="15" rx="2" stroke="currentColor" stroke-width="1.7" width="18" x="3" y="5"></rect><path d="M3 10h18M7 15h4" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span><div><h3>ज़रूरत हो तो पहले भुगतान</h3><p>क्लिनिक तय करे कि मरीज ऑनलाइन पहले भुगतान करे या काउंटर पर। पहले भुगतान से बिना बताए न आने की संभावना कम हो सकती है, लेकिन इसकी गारंटी नहीं है।</p></div></article>
+<article class="benefit-item"><span class="benefit-icon"><svg fill="none" viewbox="0 0 24 24"><path d="M20 11.5A8.3 8.3 0 0 1 11.7 20a8.8 8.8 0 0 1-4-.9L3 20l1.1-4.4A8.3 8.3 0 1 1 20 11.5Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path><path d="m8 12 2.3 2.2L16 8.8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></svg></span><div><h3>बुकिंग बदलना आसान</h3><p>क्लिनिक के नियमों के अनुसार मरीज खुद बुकिंग रद्द या दूसरी तारीख पर कर सकें। खाली हुआ स्लॉट फिर से बुकिंग के लिए दिया जा सकता है।</p></div></article>
+</div>
+<a class="btn btn-primary" href="#contact">अपने क्लिनिक की बुकिंग योजना बनाएं <span aria-hidden="true">→</span></a>
+</div>
+<div aria-label="ऑनलाइन बुकिंग का उदाहरण" class="booking-demo-card">
+<div class="booking-demo-top"><div class="clinic-avatar">V</div><div><strong>ग्रीन वैली क्लिनिक</strong><small>क्लिनिक पेज का उदाहरण</small></div><span class="online-pill"><i></i> ऑनलाइन</span></div>
+<div class="booking-demo-body"><span class="mini-label">डॉक्टर से मिलने का समय लें</span><h3>डॉक्टर चुनें</h3><p>खाली समय देखें और अपनी सुविधा से समय चुनें।</p>
+<div class="doctor-choice selected"><span class="doctor-avatar avatar-one">AS</span><span class="doctor-detail"><strong>डॉ. ए. शर्मा</strong><small>जनरल मेडिसिन · 15 मिनट</small></span><span class="radio-check">✓</span></div>
+<div class="date-selector"><span><small>सोम</small><b>14</b></span><span class="selected-day"><small>मंगल</small><b>15</b></span><span><small>बुध</small><b>16</b></span><span><small>गुरु</small><b>17</b></span></div>
+<div class="slot-grid"><button class="slot-choice" type="button">10:00 AM</button><button class="slot-choice selected" type="button">10:30 AM</button><button class="slot-choice" type="button">11:15 AM</button><button class="slot-choice" type="button">12:00 PM</button></div>
+<div class="booking-summary"><span>परामर्श फीस</span><strong>₹ — <small>क्लिनिक तय करेगा</small></strong></div>
+<div class="demo-book-btn">बुकिंग जारी रखें <span>→</span></div>
+<p class="micro-note">यह सिर्फ स्क्रीन का उदाहरण है। समय, भुगतान, रद्द करने और रिफंड के नियम हर क्लिनिक के अनुसार तय होंगे।</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section-pad device-section" id="digital-register">
+<div class="container device-layout">
+<div class="section-copy device-copy">
+<span class="eyebrow">एक सुरक्षित जगह · हर डिवाइस</span>
+<h2>रजिस्टर का काम मोबाइल, टैबलेट या कंप्यूटर पर करें।</h2>
+<p class="section-intro">अपॉइंटमेंट बुक, मरीज की हिस्ट्री, रसीद और स्टाफ रजिस्टर अलग-अलग कॉपियों में रखने की ज़रूरत कम करें। अनुमति वाले कर्मचारी रिसेप्शन, डॉक्टर के कमरे या दूसरी जगह से अपने डिवाइस पर जानकारी देख सकें।</p>
+<div class="device-benefits">
+<div><span>✓</span><div><strong>पन्ने पलटने के बजाय खोजें</strong><p>सिस्टम में दर्ज नाम या जानकारी से मरीज, विज़िट, बिल या स्टॉक खोजें।</p></div></div>
+<div><span>✓</span><div><strong>पूरी टीम एक ही रिकॉर्ड पर काम करे</strong><p>रिसेप्शन, डॉक्टर और बिलिंग स्टाफ एक अपडेटेड रिकॉर्ड पर काम करें। हर व्यक्ति को उसके काम के अनुसार ही एक्सेस मिले।</p></div></div>
+<div><span>✓</span><div><strong>काम के हिसाब से डिवाइस चुनें</strong><p>जल्दी देखने के लिए मोबाइल, वार्ड या कमरे में टैबलेट, और रिपोर्ट व विस्तार से डेटा भरने के लिए कंप्यूटर।</p></div></div>
+</div>
+<p class="inline-note"><strong>आसान और सुरक्षित इस्तेमाल के लिए:</strong> क्लाउड पर कहीं से एक्सेस करने के लिए इंटरनेट और सही अनुमति ज़रूरी है। बिना इंटरनेट कौन-सी सुविधा चलेगी, यह लागू करते समय तय होगा।</p>
+<a class="btn btn-primary" href="#contact">रजिस्टर डिजिटल करने पर बात करें <span aria-hidden="true">→</span></a>
+</div>
+<div aria-label="कंप्यूटर, टैबलेट और मोबाइल पर VaidyaLoop का उदाहरण" class="device-showcase">
+<div class="device-desktop">
+<div class="device-topbar"><span class="device-logo-dot">V</span><strong>क्लिनिक वर्कस्पेस</strong><small>सारांश · उदाहरण</small></div>
+<div class="device-desktop-body"><aside><span class="side-active">सारांश</span><span>अपॉइंटमेंट</span><span>मरीज</span><span>बिलिंग</span><span>स्टाफ</span></aside><div class="device-screen-main"><div class="device-greeting"><small>बुधवार · क्लिनिक सारांश</small><b>क्लिनिक की एक नज़र में जानकारी</b></div><div class="device-kpis"><div><small>आज के मरीज</small><strong>24</strong></div><div><small>बाकी फॉलो-अप</small><strong>06</strong></div><div><small>रसीदें</small><strong>18</strong></div></div><div class="device-list-head"><b>हाल के काम</b><small>उदाहरण रिकॉर्ड</small></div><div class="device-list-row"><i></i><span><b>मरीज की एंट्री हुई</b><small>मरीज का रिकॉर्ड अपडेट हुआ</small></span><em>आज</em></div><div class="device-list-row"><i></i><span><b>रसीद बनी</b><small>परामर्श का बिल</small></span><em>आज</em></div><div class="device-list-row"><i></i><span><b>फॉलो-अप रिमाइंडर बाकी</b><small>तय संदेश देखें</small></span><em>बाकी</em></div></div></div>
+</div>
+<div class="device-tablet"><div class="device-tablet-bar"><strong>मरीज की जानकारी</strong><span>● सुरक्षित एक्सेस का उदाहरण</span></div><div class="device-tablet-patient"><span class="device-avatar">MK</span><div><b>मीरा K., 58 वर्ष</b><small>काल्पनिक मरीज का उदाहरण</small></div></div><div class="device-tablet-summary"><b>मरीज का सार <em>जाँच ज़रूरी</em></b><p>पिछली विज़िट 12 अगस्त: घुटने में दर्द, आराम की सलाह। दर्ज एलर्जी: <strong>पेनिसिलिन</strong>। 1 फॉलो-अप बाकी।</p><small>↳ मूल नोट एक टैप में देखें</small></div></div>
+<div class="device-phone"><div class="phone-speaker"></div><div class="phone-screen"><div class="phone-greeting"><small>VAIDYALOOP</small><b>आज का क्लिनिक</b></div><div class="phone-kpi"><span>अपॉइंटमेंट</span><strong>24</strong></div><div class="phone-row"><span class="phone-row-icon">✓</span><div><b>रिसेप्शन की कतार</b><small>5 इंतज़ार में</small></div><span>›</span></div><div class="phone-row"><span class="phone-row-icon mint">₹</span><div><b>बिलिंग</b><small>रसीदें और बकाया</small></div><span>›</span></div><div class="phone-row"><span class="phone-row-icon blue">▤</span><div><b>स्टाफ की हाज़िरी</b><small>आज की ड्यूटी</small></div><span>›</span></div></div></div>
+<div class="device-caption"><span>मोबाइल</span><span>टैबलेट</span><span>कंप्यूटर</span></div>
+</div>
+</div>
+</section>
+<section class="section-pad section-white" id="walk-ins">
+<div class="container split-section reverse-mobile">
+<div class="queue-visual-wrap">
+<div class="queue-board">
+<div class="queue-board-head"><div><span class="mini-label">रिसेप्शन की स्क्रीन</span><h3>आज की कतार</h3></div><div class="queue-count"><strong>12</strong><small>एंट्री हो चुकी</small></div></div>
+<div class="queue-metrics"><div><span>इंतज़ार</span><strong>05</strong></div><div><span>डॉक्टर से मिल रहे हैं</span><strong>02</strong></div><div><span>पूरे हुए</span><strong>08</strong></div></div>
+<div class="queue-ticket ticket-emergency"><div class="ticket-number">E-01</div><div class="ticket-main"><strong>आपात स्थिति</strong><small>स्टाफ तुरंत ध्यान दे</small></div><span class="ticket-label emergency-label">तत्काल</span></div>
+<div class="queue-ticket ticket-priority"><div class="ticket-number">P-04</div><div class="ticket-main"><strong>प्राथमिकता</strong><small>क्लिनिक के तय नियम से प्राथमिकता</small></div><span class="ticket-label priority-label">प्राथमिकता</span></div>
+<div class="queue-ticket"><div class="ticket-number">N-08</div><div class="ticket-main"><strong>सामान्य मुलाकात</strong><small>सीधे आए · एंट्री 10:25</small></div><span class="ticket-label normal-label">इंतज़ार</span></div>
+<div class="queue-ticket"><div class="ticket-number">N-09</div><div class="ticket-main"><strong>सामान्य मुलाकात</strong><small>सीधे आए · एंट्री 10:31</small></div><span class="ticket-label normal-label">इंतज़ार</span></div>
+<div class="queue-board-foot"><span class="status-dot"></span> अधिकृत स्टाफ कतार की स्थिति बदल सकता है</div>
+</div>
+<div class="queue-callout"><span class="callout-icon">↗</span><span><strong>सभी मरीजों की एक कतार</strong><small>ऑनलाइन बुकिंग और सीधे आए मरीज साथ</small></span></div>
+</div>
+<div class="section-copy">
+<span class="eyebrow">02 / रिसेप्शन का काम</span>
+<h2>बिना बुकिंग आए मरीजों के लिए भी साफ व्यवस्था।</h2>
+<p class="section-intro">केवल ऑनलाइन बुकिंग से पूरा क्लिनिक नहीं चलता। प्रस्तावित सिस्टम में पहले से बुक मरीज और सीधे आए मरीज एक ही कतार में दिखेंगे। रिसेप्शन देख सकेगा कि कौन आया है, कौन इंतज़ार में है और किस पर ध्यान देना है।</p>
+<div class="priority-explainer">
+<div class="priority-line"><span class="priority-dot dot-normal"></span><div><strong>सामान्य</strong><p>सामान्य मरीज को टोकन के क्रम में रखा जाएगा।</p></div></div>
+<div class="priority-line"><span class="priority-dot dot-priority"></span><div><strong>प्राथमिकता</strong><p>क्लिनिक के नियम के अनुसार कुछ मरीजों को प्राथमिकता दी जा सकती है। स्टाफ को तय नियम अपनाने होंगे।</p></div></div>
+<div class="priority-line"><span class="priority-dot dot-emergency"></span><div><strong>आपात स्थिति</strong><p>रिसेप्शन को तुरंत योग्य मेडिकल स्टाफ को बताने का संकेत। सॉफ्टवेयर टोकन मेडिकल जाँच या आपात निर्णय की जगह नहीं लेता।</p></div></div>
+</div>
+<p class="inline-note"><strong>इससे फायदा:</strong> “अब किसकी बारी?” पूछने में कम रुकावट, इंतज़ार की साफ स्थिति और दिनभर की कतार का रिकॉर्ड।</p>
+</div>
+</div>
+</section>
+<section class="section-pad ai-section" id="ai-history">
+<div class="container ai-layout">
+<div class="ai-copy">
+<span class="eyebrow eyebrow-light">03 / AI से मरीज की हिस्ट्री</span>
+<h2>मरीज के आने से पहले पिछली जानकारी देख लें।</h2>
+<p class="ai-intro">हर पुरानी पर्ची और नोट अलग-अलग खोलने के बजाय डॉक्टर पहले एक छोटा सार देख सकते हैं। ज़रूरत पड़ने पर मूल रिकॉर्ड भी खोल सकते हैं।</p>
+<div class="ai-benefit-grid">
+<div><span class="ai-check">✓</span><div><strong>कम समय में तैयारी</strong><p>पिछली ज़रूरी विज़िट, दर्ज दवाइयाँ और फॉलो-अप एक जगह देखें।</p></div></div>
+<div><span class="ai-check">✓</span><div><strong>मरीज से बात करने का समय</strong><p>रिकॉर्ड खोजने में कम समय लगाएँ और मरीज की अभी की परेशानी को सुनने पर ज़्यादा ध्यान दें।</p></div></div>
+<div><span class="ai-check">✓</span><div><strong>इलाज की जानकारी साथ रहे</strong><p>पहले क्या दर्ज हुआ था, यह देखें। पुरानी जानकारी सही है या नहीं, मरीज से फिर पुष्टि करें।</p></div></div>
+</div>
+<div class="ai-disclaimer"><span aria-hidden="true">ⓘ</span><p><strong>अंतिम फैसला डॉक्टर का।</strong> AI का सार मदद के लिए है, निदान नहीं। उसमें मूल रिकॉर्ड देखने का रास्ता होना चाहिए और अधूरी जानकारी साफ दिखनी चाहिए। मेडिकल इस्तेमाल से पहले डॉक्टर द्वारा जाँच और इसकी सटीकता व समय की बचत का परीक्षण ज़रूरी है।</p></div>
+</div>
+<div class="patient-brief-card">
+<div class="patient-brief-header"><div><span class="mini-label">मरीज की जानकारी</span><h3>मीरा K., 58 वर्ष <span class="sample-chip">उदाहरण</span></h3><p>मरीज का काल्पनिक रिकॉर्ड</p></div><div class="patient-avatar">MK</div></div>
+<div class="patient-quick-facts"><div><small>पिछली विज़िट</small><strong>12 अगस्त</strong></div><div><small>दर्ज एलर्जी</small><strong class="allergy-emphasis">पेनिसिलिन</strong></div><div><small>फॉलो-अप</small><strong>1 बाकी</strong></div></div>
+<div aria-label="मरीज की जानकारी के टैब" class="brief-tabs" role="tablist">
+<button aria-selected="true" class="brief-tab active" data-brief="summary" role="tab" type="button">AI सार</button>
+<button aria-selected="false" class="brief-tab" data-brief="timeline" role="tab" type="button">विज़िट की हिस्ट्री</button>
+<button aria-selected="false" class="brief-tab" data-brief="medicines" role="tab" type="button">दर्ज दवाइयाँ</button>
+</div>
+<div aria-live="polite" class="brief-content" id="brief-content" role="tabpanel" tabindex="0">
+<div class="brief-heading"><span class="ai-spark">✳</span><div><strong>मरीज का सार <em class="review-required">जाँच ज़रूरी</em></strong><small>दर्ज रिकॉर्ड के आधार पर बनाया गया</small></div></div>
+<div class="patient-name-line"><strong>मीरा K., 58 वर्ष</strong><span>काल्पनिक मरीज का उदाहरण</span></div>
+<div class="summary-point"><span>01</span><p><strong>पिछली विज़िट 12 अगस्त:</strong> घुटने में दर्द; आराम की सलाह।</p></div>
+<div class="summary-point"><span>02</span><p><strong>दर्ज एलर्जी:</strong> <strong class="allergy-emphasis">पेनिसिलिन</strong>.</p></div>
+<div class="summary-point"><span>03</span><p><strong>1 फॉलो-अप बाकी।</strong> मरीज से इसकी स्थिति की पुष्टि करें।</p></div>
+<button class="source-link source-link-action source-note-open" data-open-source-notes="" type="button"><span class="source-mark">↳</span> मूल नोट एक टैप में देखें</button>
+</div>
+<details class="source-notes-details" id="notes-example"><summary>मूल नोट का उदाहरण देखें</summary><p>12 अगस्त की मुलाकात: घुटने में दर्द दर्ज; आराम की सलाह। एलर्जी में पेनिसिलिन दर्ज है। फॉलो-अप बाकी है। यह काल्पनिक उदाहरण है, असली मेडिकल रिकॉर्ड नहीं।</p></details>
+<div class="patient-brief-footer"><span><i aria-hidden="true" class="tiny-lock"></i> एक्सेस क्लिनिक की अनुमति के अनुसार हो</span><span>कॉन्सेप्ट का उदाहरण</span></div>
+</div>
+</div>
+</section>
+<section class="section-pad section-soft" id="reminders">
+<div class="container split-section reminders-layout">
+<div class="section-copy">
+<span class="eyebrow">04 / फॉलो-अप रिमाइंडर</span>
+<h2>मरीज को अगली मुलाकात याद दिलाएँ।</h2>
+<p class="section-intro">फॉलो-अप तभी मददगार है जब मरीज को तारीख याद रहे। प्रस्तावित सिस्टम में स्टाफ अगली तारीख दर्ज कर सकेगा और चुने हुए माध्यम से रिमाइंडर भेज सकेगा।</p>
+<ul class="check-list large-checks">
+<li><span>✓</span> मुलाकात से पहले रिमाइंडर</li>
+<li><span>✓</span> तारीख, समय और क्लिनिक की साफ जानकारी</li>
+<li><span>✓</span> जहाँ सुविधा हो, बुकिंग बदलने या रद्द करने का लिंक</li>
+<li><span>✓</span> जहाँ उपलब्ध हो, रिमाइंडर भेजे जाने की स्थिति</li>
+</ul>
+<p class="inline-note">रिमाइंडर से भूलने की संभावना कम हो सकती है। संदेश पहुँचना मोबाइल नंबर, सेवा और मरीज की पसंद पर निर्भर करेगा। समय, सहमति और संदेश बंद करने का विकल्प क्लिनिक के नियंत्रण में होना चाहिए।</p>
+</div>
+<div class="reminder-visual">
+<div class="message-card message-back"><span class="msg-kicker">VaidyaLoop · रिमाइंडर का उदाहरण</span><p>ग्रीन वैली क्लिनिक में आपकी मुलाकात कल सुबह 10:30 बजे तय है।</p><small>उदाहरण संदेश · भेजा नहीं गया</small></div>
+<div class="message-card message-front"><div class="message-app-head"><span class="message-avatar">V</span><div><strong>क्लिनिक रिमाइंडर</strong><small>अपॉइंटमेंट की सूचना</small></div><span class="message-time">10:05 AM</span></div><div class="message-bubble"><p>नमस्ते, आपकी आने वाली मुलाकात का यह रिमाइंडर है।</p><div class="message-details"><span>डॉक्टर</span><strong>डॉ. ए. शर्मा</strong><span>तारीख और समय</span><strong>15 अक्टूबर · सुबह 10:30</strong><span>पता</span><strong>ग्रीन वैली क्लिनिक</strong></div><p>समय बदलना हो तो कृपया क्लिनिक से संपर्क करें।</p><small>सिर्फ उदाहरण</small></div><div class="message-card-footer"><span>✓</span> सूचना का उदाहरण</div></div>
+</div>
+</div>
+</section>
+<section class="section-pad section-white" id="operations">
+<div class="container">
+<div class="section-heading center-heading"><span class="eyebrow">05 / क्लिनिक और कारोबार का काम</span><h2>डॉक्टर के कमरे के बाहर का काम भी समझें।</h2><p>मरीजों की संख्या, पैसे, स्टॉक और स्टाफ के फैसले दर्ज जानकारी के आधार पर लें। रिपोर्ट उतनी ही सही होगी जितना सही रिकॉर्ड भरा गया है।</p></div>
+<div class="operations-grid">
+<article class="operation-card reports-card"><div class="operation-icon icon-blue"><svg fill="none" viewbox="0 0 24 24"><path d="M4 19V5m0 14h17M7 15l4-4 3 2 5-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div><span class="operation-number">01</span><h3>रिपोर्ट और काम का हिसाब</h3><p>हर दिन कितने मरीज आए, कितनी मुलाकातें पूरी हुईं, कितने पुराने मरीज लौटे, कितनी बुकिंग रद्द हुई और डॉक्टर के अनुसार काम देखें। रोज़, महीने और साल की जमा राशि की तुलना करें।</p><div aria-label="मरीजों की संख्या का उदाहरण चार्ट" class="mini-chart"><div class="chart-legend"><span><i class="legend-dot teal-dot"></i>देखे गए मरीज</span><span>उदाहरण</span></div><div class="bar-chart"><span style="--bar:44%"><i></i><small>M</small></span><span style="--bar:63%"><i></i><small>T</small></span><span style="--bar:52%"><i></i><small>W</small></span><span style="--bar:84%"><i></i><small>T</small></span><span style="--bar:70%"><i></i><small>F</small></span><span style="--bar:95%"><i></i><small>S</small></span><span style="--bar:36%"><i></i><small>S</small></span></div></div><ul class="mini-feature-list"><li>रोज़, महीने और साल की रिपोर्ट</li><li>मरीजों की संख्या और कमाई का रुझान</li><li>जमा राशि और बकाया</li></ul></article>
+<article class="operation-card finance-card"><div class="operation-icon icon-green"><svg fill="none" viewbox="0 0 24 24"><rect height="14" rx="2" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="5"></rect><path d="M3 10h18m-13 5h3" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div><span class="operation-number">02</span><h3>बिलिंग और रसीद</h3><p>परामर्श, प्रक्रिया, दवाइयों और अन्य सेवाओं का अलग-अलग बिल बनाएं। नकद, UPI, ऑनलाइन भुगतान, आंशिक भुगतान, रिफंड और बकाया दर्ज करें।</p><div class="receipt-demo"><div class="receipt-top"><strong>भुगतान की रसीद</strong><span>उदाहरण</span></div><div class="receipt-line"><span>परामर्श</span><b>₹ —</b></div><div class="receipt-line"><span>दवाइयाँ</span><b>₹ —</b></div><div class="receipt-line"><span>अन्य सेवाएँ</span><b>₹ —</b></div><div class="receipt-total"><span>कुल देय</span><strong>तय राशि</strong></div><div class="receipt-stamp">रसीद का उदाहरण</div></div><ul class="mini-feature-list"><li>सही तरीके से बिल और रसीद</li><li>भुगतान और रिफंड दर्ज करें</li><li>दिन की जमा राशि मिलाएँ</li></ul></article>
+<article class="operation-card pharmacy-card"><div class="operation-icon icon-orange"><svg fill="none" viewbox="0 0 24 24"><path d="M9 3h6v4H9zM7 7h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.7"></path><path d="M12 10v7m-3.5-3.5h7" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></div><span class="operation-number">03</span><h3>फार्मेसी और स्टॉक</h3><p>दवा, बैच, एक्सपायरी और बची मात्रा देखें। दवा देने का रिकॉर्ड बिल से जोड़ें, खरीद और वापसी दर्ज करें, और कम स्टॉक या नज़दीक एक्सपायरी की सूचना पाएं।</p><div class="stock-demo"><div class="stock-row"><span class="stock-pill stock-ok"></span><div><strong>दवा A</strong><small>स्टॉक की स्थिति</small></div><span class="stock-level">ठीक है</span></div><div class="stock-row"><span class="stock-pill stock-low"></span><div><strong>दवा B</strong><small>स्टॉक की स्थिति</small></div><span class="stock-level low-text">स्टॉक कम</span></div><div class="stock-row"><span class="stock-pill stock-exp"></span><div><strong>दवा C</strong><small>एक्सपायरी जाँच</small></div><span class="stock-level exp-text">बैच जाँचें</span></div></div><ul class="mini-feature-list"><li>खरीद और दवा देने का रिकॉर्ड</li><li>एक्सपायरी और कम स्टॉक की सूचना</li><li>स्टॉक का आना-जाना और कीमत</li></ul></article>
+<article class="operation-card staff-card"><div class="operation-icon icon-purple"><svg fill="none" viewbox="0 0 24 24"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.7"></circle><path d="M3.5 20v-1.5A4.5 4.5 0 0 1 8 14h2a4.5 4.5 0 0 1 4.5 4.5V20M16 5.5a3 3 0 0 1 0 5.8M17 14h.5a3.5 3.5 0 0 1 3.5 3.5V20" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></div><span class="operation-number">04</span><h3>स्टाफ मैनेजमेंट</h3><p>कर्मचारी की जानकारी, काम, शाखा और संपर्क एक जगह रखें। हाज़िरी दर्ज करें, छुट्टी की मंज़ूरी भेजें और देखें कि किसकी ड्यूटी है।</p><div class="staff-demo"><div class="staff-demo-head"><strong>टीम की जानकारी</strong><span>उदाहरण</span></div><div class="staff-avatars"><span>AS</span><span>RK</span><span>PM</span><span>+2</span></div><div class="staff-status-row"><span><i class="staff-status-dot present"></i>मौजूद</span><strong>08</strong></div><div class="staff-status-row"><span><i class="staff-status-dot leave"></i>छुट्टी पर</span><strong>01</strong></div><div class="staff-status-row"><span><i class="staff-status-dot pending"></i>छुट्टी की मंज़ूरी बाकी</span><strong>02</strong></div></div><ul class="mini-feature-list"><li>कर्मचारी की जानकारी और रिकॉर्ड</li><li>हाज़िरी और छुट्टी का काम</li><li>काम के अनुसार जानकारी का एक्सेस</li></ul></article>
+</div>
+</div>
+</section>
+<section class="section-pad roster-section" id="roster-planner">
+<div class="container roster-layout">
+<div class="section-copy roster-copy">
+<span class="eyebrow">AI की मदद से ड्यूटी प्लान</span>
+<h2>हर बार शुरू से ड्यूटी चार्ट बनाने की ज़रूरत कम करें।</h2>
+<p class="section-intro">प्रस्तावित AI प्लानर स्टाफ की उपलब्धता, मंज़ूर छुट्टी, भूमिका, शिफ्ट की ज़रूरत और क्लिनिक के नियम देखकर ड्यूटी चार्ट का ड्राफ्ट बनाएगा। मैनेजर कमी और टकराव देख कर मंज़ूरी दे सकेगा।</p>
+<div class="roster-benefit-list">
+<div><span>✓</span><div><strong>उपलब्धता और छुट्टी देखें</strong><p>जो स्टाफ उपलब्ध नहीं है या छुट्टी पर है, उसे ड्यूटी देने से बचें।</p></div></div>
+<div><span>✓</span><div><strong>ड्यूटी और काम की ज़रूरत जाँचें</strong><p>जिस शिफ्ट में ज़रूरी भूमिका वाला व्यक्ति नहीं है या स्टाफ ज़्यादा है, उसे चिन्हित करें।</p></div></div>
+<div><span>✓</span><div><strong>अंतिम नियंत्रण मैनेजर के पास</strong><p>AI केवल ड्राफ्ट देगा। अधिकृत मैनेजर जाँचकर मंज़ूरी देगा। बदलावों का रिकॉर्ड रखा जाएगा।</p></div></div>
+</div>
+<p class="inline-note"><strong>ध्यान दें:</strong> यह आने वाली सुविधा का प्रस्ताव है। ड्यूटी नियम, काम के घंटे और मंज़ूरी की प्रक्रिया क्लिनिक के साथ तय होगी।</p>
+</div>
+<div class="roster-demo-card">
+<div class="roster-demo-head"><div><span class="mini-label">ड्यूटी चार्ट प्लानर</span><h3>हफ्ते की ड्यूटी</h3><p>उदाहरण · जाँच के लिए ड्राफ्ट</p></div><span class="roster-status">ड्राफ्ट</span></div>
+<div class="roster-filters"><span>हफ्ते का दृश्य</span><span>सभी विभाग</span><span>3 भूमिकाएँ</span></div>
+<div class="roster-table-wrap"><table class="roster-table"><thead><tr><th>स्टाफ सदस्य</th><th>सोम</th><th>मंगल</th><th>बुध</th><th>गुरु</th><th>शुक्र</th></tr></thead><tbody><tr><td><b>आर. वर्मा</b><small>नर्सिंग</small></td><td><i class="shift-day">सुबह</i></td><td><i class="shift-day">सुबह</i></td><td><i class="shift-off">छुट्टी</i></td><td><i class="shift-day">सुबह</i></td><td><i class="shift-day">सुबह</i></td></tr><tr><td><b>पी. मिश्रा</b><small>रिसेप्शन</small></td><td><i class="shift-day">दिन</i></td><td><i class="shift-day">दिन</i></td><td><i class="shift-day">दिन</i></td><td><i class="shift-off">छुट्टी</i></td><td><i class="shift-day">दिन</i></td></tr><tr><td><b>ए. खान</b><small>फार्मेसी</small></td><td><i class="shift-day">दिन</i></td><td><i class="shift-off">छुट्टी</i></td><td><i class="shift-day">दिन</i></td><td><i class="shift-day">दिन</i></td><td><i class="shift-day">दिन</i></td></tr></tbody></table></div>
+<div class="roster-draft-check"><span class="roster-check-icon">✳</span><div><strong>मंज़ूरी से पहले जाँचें</strong><p>मंगलवार की ड्यूटी, मंज़ूर छुट्टी और शिफ्ट के घंटे जाँचें।</p></div></div>
+<button aria-controls="roster-rule-detail" aria-expanded="false" class="roster-explain-toggle" type="button">प्लानर किन बातों को देखेगा <span aria-hidden="true">＋</span></button>
+<div class="roster-rule-detail" hidden="" id="roster-rule-detail"><ul><li>स्टाफ की भूमिका और ज़रूरी संख्या</li><li>उपलब्धता और मंज़ूर छुट्टी</li><li>शिफ्ट के घंटे और आराम के नियम</li><li>जहाँ संभव हो, ड्यूटी बराबर बाँटना</li><li>मैनेजर के बदलाव और मंज़ूरी का रिकॉर्ड</li></ul></div>
+<div class="roster-demo-foot"><span>AI का ड्राफ्ट · मैनेजर की मंज़ूरी ज़रूरी</span><span>कॉन्सेप्ट का उदाहरण</span></div>
+</div>
+</div>
+</section>
+<section class="section-pad accounting-section" id="accounting">
+<div class="container accounting-layout">
+<div class="section-copy"><span class="eyebrow">06 / पैसों का साफ हिसाब</span><h2>बिल, फार्मेसी, खर्च और जमा राशि एक जगह जोड़ें।</h2><p class="section-intro">प्रस्तावित हिसाब-किताब सुविधा से मालिक देख सकेंगे कि पैसा कहाँ से आया, कहाँ खर्च हुआ और क्या बाकी है। रिकॉर्ड पर आधारित जानकारी होगी; यह अकाउंटेंट की सलाह की जगह नहीं है।</p><div class="accounting-points"><div><span class="number-check">01</span><div><strong>कमाई और भुगतान का रिकॉर्ड</strong><p>परामर्श फीस, प्रक्रिया, फार्मेसी बिक्री, रिफंड और भुगतान का तरीका।</p></div></div><div><span class="number-check">02</span><div><strong>खर्च और सप्लायर</strong><p>खर्च की श्रेणी, सप्लायर से खरीद, देय राशि और बिल/दस्तावेज़ दर्ज करें।</p></div></div><div><span class="number-check">03</span><div><strong>फार्मेसी की बिक्री की जानकारी</strong><p>जहाँ पर्ची और फार्मेसी बिक्री दोनों का रिकॉर्ड हो, वहाँ तुलना करें। इससे बाहर से दवा खरीदने की संभावना दिख सकती है, लेकिन सिर्फ इससे खोई हुई बिक्री साबित नहीं होती।</p></div></div><div><span class="number-check">04</span><div><strong>हिसाब मिलाना और रिपोर्ट निकालना</strong><p>दर्ज भुगतान को बैंक या पेमेंट गेटवे की जमा राशि से मिलाएँ और अकाउंटेंट के लिए रिपोर्ट निकालें।</p></div></div></div></div>
+<div class="accounting-visual"><div class="accounts-window"><div class="accounts-header"><div><span class="mini-label">मालिक का सार</span><h3>पैसों का सार</h3></div><span class="period-selector">इस महीने ▾</span></div><div class="accounts-kpis"><div><small>दर्ज कमाई</small><strong>₹ —</strong><span>दर्ज रिकॉर्ड के आधार पर</span></div><div><small>दर्ज खर्च</small><strong>₹ —</strong><span>दर्ज रिकॉर्ड के आधार पर</span></div></div><div class="income-expense-chart"><div class="chart-caption"><strong>आय और खर्च</strong><small>उदाहरण</small></div><div class="chart-grid-lines"><i></i><i></i><i></i><i></i></div><svg aria-label="कमाई और खर्च के उदाहरण का चार्ट" class="line-chart" role="img" viewbox="0 0 330 120"><path d="M7 92 C35 85 42 58 68 65 S105 83 130 43 S170 62 194 36 S236 44 255 25 S300 31 323 12" fill="none" stroke="#238f82" stroke-linecap="round" stroke-width="3"></path><path d="M7 103 C36 97 43 89 68 91 S105 74 130 82 S167 69 194 77 S235 64 255 72 S299 57 323 62" fill="none" stroke="#e5ad54" stroke-dasharray="5 5" stroke-linecap="round" stroke-width="2.5"></path></svg><div class="chart-key"><span><i class="legend-dot teal-dot"></i>कमाई</span><span><i class="legend-dot gold-dot"></i>खर्च</span></div></div><div class="accounts-footer"><span><i aria-hidden="true" class="tiny-lock"></i> सही रिपोर्ट के लिए पूरी जानकारी दर्ज होनी चाहिए</span><span>कॉन्सेप्ट का उदाहरण</span></div></div><div class="accounting-callout"><span class="callout-icon gold-callout">₹</span><div><strong>जाँचने लायक बातों को पहचानें</strong><small>बकाया बिल · स्टॉक में असामान्य बदलाव · दर्ज न हुए खर्च</small></div></div></div>
+</div>
+</section>
+<section class="section-pad section-white" id="roadmap">
+<div class="container">
+<div class="section-heading center-heading"><span class="eyebrow">आगे की योजना</span><h2>क्लिनिक से शुरुआत करें, ज़रूरत पर आगे बढ़ें।</h2><p>ये आने वाली सुविधाओं की योजना है। उपलब्धता विकास, परीक्षण और लागू करने की ज़रूरत पर निर्भर करेगी।</p></div>
+<div class="roadmap-grid">
+<article class="roadmap-card roadmap-now"><div class="roadmap-label"><span></span> पहला फोकस</div><h3>OPD और बाहरी मरीजों का काम</h3><p>अपॉइंटमेंट, सीधे आए मरीजों के टोकन, डॉक्टर का समय, मरीज की हिस्ट्री, AI सार, रिमाइंडर, बिलिंग, फार्मेसी, स्टाफ और रिपोर्ट।</p><div class="roadmap-foot">चरणों में लागू करने की योजना</div></article>
+<article class="roadmap-card"><div class="roadmap-label planned-label"><span></span> आने वाला</div><h3>भर्ती मरीज और बेड</h3><p>खाली बेड/वार्ड, भर्ती, वार्ड बदलना, रोज़ डॉक्टर राउंड, नर्सिंग काम, इलाज के नोट्स और छुट्टी की प्रक्रिया—मरीज के रिकॉर्ड से जुड़े।</p><div class="roadmap-foot">योजना में · अभी उपलब्ध नहीं बताया जा रहा</div></article>
+<article class="roadmap-card"><div class="roadmap-label planned-label"><span></span> आने वाला</div><h3>ज़रूरी संसाधनों पर नज़र</h3><p>ऑक्सीजन की उपलब्धता, ब्लड बैंक स्टॉक/एक्सपायरी और ज़रूरी अलर्ट का रिकॉर्ड। लाइव निगरानी के लिए जाँची हुई प्रक्रिया, सिस्टम कनेक्शन और स्टाफ की कार्रवाई ज़रूरी होगी।</p><div class="roadmap-foot">योजना में · मेडिकल निगरानी की जगह नहीं</div></article>
+<article class="roadmap-card"><div class="roadmap-label planned-label"><span></span> आने वाला</div><h3>शिकायत/सवाल और पूरा हिसाब</h3><p>मरीज या स्टाफ के सवाल दर्ज करें, जिम्मेदार व्यक्ति को भेजें और समाधान तक स्थिति देखें। आगे चलकर खर्च, सप्लायर, मिलान, लेजर और अकाउंटेंट के लिए रिपोर्ट शामिल हो सकती हैं।</p><div class="roadmap-foot">योजना में · उपयोगकर्ताओं से चर्चा करके तय होगा</div></article>
+</div>
+<div class="rounds-feature"><div class="rounds-icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h8M8 13h5M8 16h3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></svg></div><div class="rounds-copy"><span class="eyebrow">भर्ती मरीजों की आने वाली प्रक्रिया</span><h3>डॉक्टर राउंड की जानकारी, मरीज के पास ही दर्ज करें।</h3><p>आने वाली सुविधा में डॉक्टर मोबाइल या टैबलेट पर अपने भर्ती मरीज, आज की विज़िट, टीम द्वारा दर्ज ताज़ा जानकारी, राउंड नोट्स, देखने वाले आदेश और बाकी काम देख सकेंगे। राउंड दर्ज होने के बाद समय सहित रोज़ की रिपोर्ट बन सकेगी।</p></div><div class="rounds-points"><span>मरीजों की सूची</span><span>राउंड के नोट्स</span><span>बाकी काम</span><span>दिन की रिपोर्ट</span></div></div>
+</div>
+</section>
+<section class="section-pad tailor-section" id="tailored">
+<div class="container tailor-layout"><div><span class="eyebrow">आपकी ज़रूरत के अनुसार</span><h2>हर क्लिनिक का काम करने का तरीका अलग होता है। सिस्टम उसी के अनुसार हो।</h2><p>पहले तय करें कि कौन-से काम ज़रूरी हैं, कौन-सी रिपोर्ट चाहिए और किसे क्या देखने की अनुमति होगी। मकसद है सिस्टम को क्लिनिक की ज़रूरत के अनुसार रखना।</p></div><div class="tailor-checks"><div><span>✓</span> क्लिनिक के अनुसार फीस और सेवाएँ</div><div><span>✓</span> डॉक्टर का समय और बुकिंग के नियम</div><div><span>✓</span> स्टाफ की भूमिका और शाखा का एक्सेस</div><div><span>✓</span> मालिक के काम की रिपोर्ट</div><div><span>✓</span> आगे की सुविधाओं की चरणबद्ध योजना</div><a class="text-link" href="#contact">अपनी ज़रूरत के अनुसार सेटअप तय करें <span aria-hidden="true">→</span></a></div></div>
+</section>
+<section class="section-pad faq-section" id="faq">
+<div class="container faq-layout"><div class="section-heading"><span class="eyebrow">ज़रूरी सवाल</span><h2>क्लिनिक का सिस्टम चुनने से पहले।</h2><p>शुरुआत, भुगतान, AI और आगे की सुविधाओं के साफ जवाब।</p></div><div class="faq-list">
+<details class="faq-item"><summary>क्या VaidyaLoop अभी इस्तेमाल के लिए उपलब्ध है?</summary><p>यह पेज प्रस्तावित उत्पाद और आने वाली सुविधाएँ दिखाता है। उपलब्धता, कनेक्शन, कीमत और समयसीमा जुड़ने से पहले तय करनी होगी।</p></details>
+<details class="faq-item"><summary>क्या ऑनलाइन बुकिंग और सीधे आना, दोनों हो सकते हैं?</summary><p>योजना है कि ऑनलाइन, फोन और सीधे आए मरीज एक कतार में दिखें। समय और टोकन क्लिनिक के नियमों के अनुसार चलेंगे।</p></details>
+<details class="faq-item"><summary>क्या AI डॉक्टर की पुरानी पर्ची देखने की जगह ले सकता है?</summary><p>नहीं। AI केवल सिस्टम में मौजूद रिकॉर्ड का सार देगा। डॉक्टर को ज़रूरी मूल जानकारी जाँचनी होगी और अपना चिकित्सकीय निर्णय लेना होगा।</p></details>
+<details class="faq-item"><summary>क्या सिस्टम बता सकता है कि बाहर दवा खरीदने से कितनी बिक्री छूटी?</summary><p>जहाँ पर्ची और फार्मेसी बिक्री का रिकॉर्ड हो, वहाँ अंतर दिख सकता है। हर बाहर की खरीद अपने आप पता नहीं चलेगी, इसलिए इसे अनुमान मानें, पक्की खोई हुई बिक्री नहीं।</p></details>
+<details class="faq-item"><summary>क्या बेड, ऑक्सीजन और ब्लड बैंक का काम शामिल होगा?</summary><p>ये भविष्य की योजना में हैं, अभी उपलब्ध सुविधाएँ नहीं हैं। इन्हें लागू करने से पहले प्रक्रिया, सुरक्षा और ज़रूरी कनेक्शन की जाँच होगी।</p></details>
+<details class="faq-item"><summary>क्या सिस्टम हमारे क्लिनिक के हिसाब से सेट हो सकता है?</summary><p>मकसद है फीस, समय, सेवाएँ, भूमिका और रिपोर्ट क्लिनिक के हिसाब से रखना। क्या बदला जा सकता है, यह पहले चर्चा करके तय होगा।</p></details>
+</div></div>
+</section>
+<section class="section-pad why-section" id="why-vaidhyaloop">
+<div class="container">
+<div class="section-heading center-heading"><span class="eyebrow">VaidyaLoop पर क्यों विचार करें?</span><h2>अपनी ज़रूरत के काम के अनुसार सिस्टम चुनें।</h2><p>फायदा सिर्फ जानकारी डिजिटल रखने में नहीं, बल्कि उसे आसानी से खोजने और उस पर काम करने में है।</p></div>
+<div class="why-grid">
+<article class="why-card clinic-why"><div class="why-card-top"><span class="why-icon">✚</span><div><span class="why-kicker">क्लिनिक के लिए</span><h3>क्लिनिक का रोज़ का काम आसान करें।</h3></div></div><ul><li>क्लिनिक का ऑनलाइन पेज दें, ताकि मरीज अपनी सुविधा से बुकिंग कर सकें।</li><li>तय करें कि पहले भुगतान ज़रूरी हो, वैकल्पिक हो या न हो।</li><li>ऑनलाइन, फोन और सीधे आए मरीज एक ही कतार में रखें।</li><li>मुलाकात से पहले मरीज की हिस्ट्री और AI सार देखें।</li><li>मुलाकात, पर्ची, बिल, रसीद और फॉलो-अप रिमाइंडर एक जगह रखें।</li><li>अलग रजिस्टर देखे बिना स्टाफ की हाज़िरी, छुट्टी, फार्मेसी स्टॉक और रोज़ की जमा राशि देखें।</li><li>मोबाइल, टैबलेट या कंप्यूटर से, सही अनुमति के साथ इस्तेमाल करें।</li></ul><a class="text-link" href="#contact">क्लिनिक के सेटअप पर बात करें <span aria-hidden="true">→</span></a></article>
+<article class="why-card hospital-why"><div class="why-card-top"><span class="why-icon">▦</span><div><span class="why-kicker">छोटे अस्पतालों के लिए</span><h3>ऐसा डिजिटल आधार बनाएं जिसे आगे बढ़ाया जा सके।</h3></div></div><ul><li>OPD समय, मरीज रिकॉर्ड, बिलिंग, फार्मेसी और स्टाफ से शुरुआत करें।</li><li>अधिकृत विभागों में मरीज, विज़िट और पैसों का रिकॉर्ड व्यवस्थित रखें।</li><li>जमा राशि, खर्च, स्टॉक और बकाया साफ तरीके से देखें।</li><li>आगे भर्ती, बेड, डॉक्टर राउंड और नर्सिंग का काम जोड़ने की तैयारी रखें।</li><li>ऑक्सीजन और ब्लड बैंक की निगरानी के लिए स्पष्ट अलर्ट और जिम्मेदारी की प्रक्रिया बनाएं।</li><li>ज़रूरत के अनुसार पूरा हिसाब और सप्लायर का बकाया जोड़ें।</li><li>सभी विभाग एक साथ शुरू करने के बजाय चरणों में लागू करें।</li></ul><a class="text-link" href="#roadmap">आने वाली सुविधाएँ देखें <span aria-hidden="true">→</span></a></article>
+</div>
+<div class="why-footnote">अस्पताल की ये सुविधाएँ योजना में हैं, अभी उपलब्ध नहीं बताई जा रही हैं। लागू करने से पहले काम का दायरा, सुरक्षा और कनेक्शन तय होंगे।</div>
+</div>
+</section>
+<section class="section-pad contact-section" id="contact">
+<div class="container contact-layout">
+<div class="contact-copy"><span class="eyebrow eyebrow-light">आपके काम पर बात करें</span><h2>बताएं कि आपका क्लिनिक आज कैसे चलता है।</h2><p>अपने क्लिनिक का प्रकार और जिन कामों को आसान करना चाहते हैं, उनके बारे में बताएं। हम ज़रूरत समझकर डेमो/वॉकथ्रू पर बात कर सकते हैं।</p><div class="contact-person-card"><div class="contact-person-avatar">SA</div><div><small>संपर्क व्यक्ति</small><strong>श्री शशांक अवस्थी</strong><a href="tel:+916306028342">+91 6306028342</a></div><a aria-label="श्री शशांक अवस्थी को फोन करें" class="phone-circle" href="tel:+916306028342"><svg fill="none" viewbox="0 0 24 24"><path d="M5 4h3l2 5-2 1.5a14 14 0 0 0 5.5 5.5L15 14l5 2v3c0 1-1 1-2 1C10 19 5 14 4 6c0-1 0-2 1-2Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path></svg></a></div><div class="contact-assurance"><span>✓</span> बात शुरू करने के लिए मरीज का रिकॉर्ड ज़रूरी नहीं। इस फॉर्म में मरीज की निजी या मेडिकल जानकारी न लिखें।</div></div>
+<form class="contact-form" id="demo-form">
+<div class="form-heading"><span>डेमो के लिए संपर्क करें</span><h3>अपने क्लिनिक के बारे में थोड़ा बताएं।</h3><p>* वाले फ़ील्ड भरना ज़रूरी है।</p></div>
+<div class="form-row"><label for="name">आपका नाम <span>*</span><input autocomplete="name" id="name" maxlength="80" name="name" placeholder="जैसे डॉ. अनिल शर्मा" required="" type="text"/></label><label for="role">आपकी भूमिका <span>*</span><select id="role" name="role" required=""><option value="">भूमिका चुनें</option><option>डॉक्टर / क्लिनिक मालिक</option><option>अस्पताल मैनेजर</option><option>रिसेप्शन / संचालन</option><option>अन्य</option></select></label></div>
+<label for="clinic">क्लिनिक / अस्पताल का नाम <span>*</span><input autocomplete="organization" id="clinic" maxlength="120" name="clinic" placeholder="क्लिनिक का नाम" required="" type="text"/></label>
+<div class="form-row"><label for="city">शहर / कस्बा <span>*</span><input autocomplete="address-level2" id="city" maxlength="80" name="city" placeholder="आपका शहर या कस्बा" required="" type="text"/></label><label for="size">क्लिनिक का आकार <span>*</span><select id="size" name="size" required=""><option value="">आकार चुनें</option><option>एक डॉक्टर</option><option>2–5 डॉक्टर</option><option>6–10 डॉक्टर</option><option>छोटा अस्पताल</option><option>अन्य</option></select></label></div>
+<label for="interest">आप सबसे पहले क्या बेहतर करना चाहते हैं? <span>*</span><select id="interest" name="interest" required=""><option value="">मुख्य ज़रूरत चुनें</option><option>ऑनलाइन अपॉइंटमेंट और कतार</option><option>मरीज की हिस्ट्री और AI सार</option><option>बिलिंग, रिपोर्ट और हिसाब</option><option>फार्मेसी और स्टॉक</option><option>स्टाफ मैनेजमेंट</option><option>भर्ती मरीज और अस्पताल का काम</option><option>सही सुविधा चुनने में मदद चाहिए</option></select></label>
+<label for="notes">और कुछ बताना है? <small>(वैकल्पिक)</small><textarea id="notes" maxlength="700" name="notes" placeholder="जिस काम को आसान करना चाहते हैं, उसे लिखें। मरीज की निजी या मेडिकल जानकारी न लिखें।" rows="3"></textarea></label>
+<button class="btn btn-primary form-submit" type="submit">WhatsApp पर आगे बढ़ें <span aria-hidden="true">→</span></button>
+<p class="form-footnote">इससे WhatsApp में संदेश तैयार होगा, जिसे भेजने से पहले आप देख सकते हैं: <strong>+91 6306028342</strong>। WhatsApp में संदेश देखकर भेजने के बाद ही जाएगा।</p>
+<p aria-live="polite" class="form-status" id="form-status" role="status"></p>
+</form>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-top"><a aria-label="VaidyaLoop मुख्य पेज" class="brand footer-brand" href="#top"><span aria-hidden="true" class="brand-mark"><svg fill="none" viewbox="0 0 40 40"><path d="M12 8.5h9.2a9 9 0 0 1 0 18H17a6 6 0 0 1 0-12h7" stroke="currentColor" stroke-linecap="round" stroke-width="3.1"></path><path d="M28 31.5h-9.2a9 9 0 0 1 0-18H23a6 6 0 0 1 0 12h-7" stroke="currentColor" stroke-linecap="round" stroke-width="3.1"></path></svg></span><span class="brand-name">Vaidya<span>Loop</span></span></a><p>क्लिनिक और अस्पताल के रोज़ के काम को सरल व व्यवस्थित करने के लिए प्रस्तावित प्लेटफ़ॉर्म।</p><a class="footer-phone" href="tel:+916306028342">+91 6306028342</a></div>
+<div class="container footer-bottom"><span>© <span id="year">2026</span> VaidyaLoop. यह उत्पाद अभी प्रस्तावित है; सुविधाएँ विकास और परीक्षण के बाद तय होंगी।</span><div><a href="#platform">सुविधाएँ</a><a href="#roadmap">आगे आने वाली सुविधाएँ</a><a href="#contact">संपर्क</a></div></div>
+</footer>
+<a class="mobile-sticky-cta" href="#contact">अपने क्लिनिक पर बात करें <span aria-hidden="true">→</span></a>
+</body>
+</html>
